@@ -1,19 +1,14 @@
 {
-  "crons": [
-    {
-      "path": "/api/fetchTweets",
-      "schedule": "0 */6 * * *"
-    }
-  ],
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "framework": "nextjs",
   "functions": {
     "api/fetchTweets/index.ts": {
       "maxDuration": 30
     }
   },
   "env": {
-    "X_BEARER_TOKEN": "@x_bearer_token",
-    "SANITY_API_TOKEN": "@sanity_api_token",
-    "CRON_SECRET_TOKEN": "@cron_secret_token",
-    "REVALIDATE_SECRET": "@revalidate_secret"
+    "NEXT_PUBLIC_SANITY_PROJECT_ID": "lao1x3f8",
+    "NEXT_PUBLIC_SANITY_DATASET": "production"
   }
 }

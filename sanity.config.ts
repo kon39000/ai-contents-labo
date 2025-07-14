@@ -22,8 +22,8 @@ export default defineConfig({
   document: {
     productionUrl: async (prev, context) => {
       const { document } = context
-      if (document._type === 'blogPost') {
-        return `${process.env.NEXT_PUBLIC_SITE_URL}/blog/${document.slug?.current}`
+      if (document._type === 'blogPost' && document.slug && typeof document.slug === 'object' && 'current' in document.slug) {
+        return `${process.env.NEXT_PUBLIC_SITE_URL}/blog/${document.slug.current}`
       }
       return prev
     },
