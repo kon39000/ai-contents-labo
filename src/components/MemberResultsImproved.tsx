@@ -49,8 +49,8 @@ export default function MemberResultsImproved() {
             <span aria-hidden="true">🎉</span> 小さな一歩から始まった成功体験
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            「1日15分」「100円note」から始めた仲間たちの<br />
-            リアルな声をお届けします
+            「1日15分」のAI学習から始めた仲間たちの<br />
+            効率化成功体験をお届けします
           </p>
         </div>
         
@@ -103,8 +103,8 @@ export default function MemberResultsImproved() {
               あなたも同じような成果を出してみませんか？
             </h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              メンバーたちと同じように、AIを活用して継続的な収入を得る方法を学べます。<br />
-              まずは「100円note作成ガイド」を無料で受け取って、最初の一歩を踏み出しましょう。
+              メンバーたちと同じように、AIを活用して業務効率化を実現する方法を学べます。<br />
+              まずは「AI効率化3ステップガイド」を無料で受け取って、最初の一歩を踏み出しましょう。
             </p>
             
             {/* メインCTA */}
@@ -112,9 +112,9 @@ export default function MemberResultsImproved() {
               <a 
                 href="#newsletter" 
                 className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200 text-lg"
-                aria-label="無料で100円note作成ガイドを受け取る"
+                aria-label="無料でAI効率化3ステップガイドを受け取る"
               >
-                <span aria-hidden="true">📧</span> 無料で100円note作成ガイドを受け取る
+                <span aria-hidden="true">📧</span> 無料でAI効率化3ステップガイドを受け取る
               </a>
             </div>
             

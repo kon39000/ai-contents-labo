@@ -10,7 +10,7 @@ export default function WebinarSectionImproved() {
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             「何から始めればいいかわからない」を解決！<br />
-            100円noteに向けた具体的なステップをお届けします
+            AI効率化3ステップの具体的なロードマップをお届けします
           </p>
         </div>
         
@@ -41,7 +41,7 @@ export default function WebinarSectionImproved() {
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start">
                     <span className="text-orange-600 mr-2 font-bold" aria-hidden="true">•</span>
-                    【超初心者向け】ChatGPTで最初の100円note作成
+                    【超初心者向け】ChatGPT基礎活用で業務効率化
                   </li>
                   <li className="flex items-start">
                     <span className="text-orange-600 mr-2 font-bold" aria-hidden="true">•</span>
@@ -49,7 +49,7 @@ export default function WebinarSectionImproved() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-orange-600 mr-2 font-bold" aria-hidden="true">•</span>
-                    月1,000円達成者の最初の一歩実例
+                    Vibeコーディング入門〜AIペアプログラミング実践
                   </li>
                 </ul>
               </div>

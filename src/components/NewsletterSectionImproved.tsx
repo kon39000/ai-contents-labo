@@ -18,11 +18,11 @@ export default function NewsletterSectionImproved() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            <span aria-hidden="true">📧</span> 「最初の100円note」作成ガイドを無料プレゼント！
+            <span aria-hidden="true">🚀</span> 「AI効率化3ステップ」完全ガイドを無料プレゼント！
           </h2>
           <p className="text-xl text-orange-100 max-w-2xl mx-auto">
-            「何から始めればいいかわからない」を解決する<br />
-            100円note作成の完全ロードマップをお届けします
+            ChatGPTからVibeコーディングまで<br />
+            業務効率化の完全ロードマップをお届けします
           </p>
         </div>
         
@@ -30,43 +30,43 @@ export default function NewsletterSectionImproved() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-6 text-white">
-                <span aria-hidden="true">🎁</span> 初心者でも安心！スタート支援5大特典
+                <span aria-hidden="true">🎁</span> 初心者でも安心！AI効率化マスター5大特典
               </h3>
               
               <div className="space-y-4 mb-8">
                 <div className="flex items-start">
                   <span className="text-yellow-300 text-xl mr-3 mt-1" aria-hidden="true">1️⃣</span>
                   <div>
-                    <h4 className="font-semibold mb-1 text-white">「最初の100円note」作成ガイド（30分動画）</h4>
-                    <p className="text-orange-100 text-sm">題材選び〜投稿まで、迷わない完全手順書</p>
+                    <h4 className="font-semibold mb-1 text-white">ChatGPT基礎活用ガイド（15分動画）</h4>
+                    <p className="text-orange-100 text-sm">初心者でもすぐに使える実践的な操作方法とコツ</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="text-yellow-300 text-xl mr-3 mt-1" aria-hidden="true">2️⃣</span>
                   <div>
-                    <h4 className="font-semibold mb-1 text-white">15分学習ワークシート（PDF）</h4>
-                    <p className="text-orange-100 text-sm">スキマ時間で確実に進歩する学習計画表</p>
+                    <h4 className="font-semibold mb-1 text-white">Gemini CLI導入実践ガイド（30分動画）</h4>
+                    <p className="text-orange-100 text-sm">コマンドライン初心者でも安心の完全セットアップ手順</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="text-yellow-300 text-xl mr-3 mt-1" aria-hidden="true">3️⃣</span>
                   <div>
-                    <h4 className="font-semibold mb-1 text-white">初心者向けプロンプト集20選</h4>
-                    <p className="text-orange-100 text-sm">コピペするだけで使える厳選プロンプト</p>
+                    <h4 className="font-semibold mb-1 text-white">Vibeコーディング入門（45分動画）</h4>
+                    <p className="text-orange-100 text-sm">AIペアプログラミングで開発効率を3倍にする方法</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="text-yellow-300 text-xl mr-3 mt-1" aria-hidden="true">4️⃣</span>
                   <div>
-                    <h4 className="font-semibold mb-1 text-white">「挫折しない」継続のコツ（音声10分）</h4>
-                    <p className="text-orange-100 text-sm">忙しい人でも3ヶ月続けられる秘訣</p>
+                    <h4 className="font-semibold mb-1 text-white">業務効率化プロンプト集50選（PDF）</h4>
+                    <p className="text-orange-100 text-sm">コピペで使える実践的なプロンプトテンプレート</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="text-yellow-300 text-xl mr-3 mt-1" aria-hidden="true">5️⃣</span>
                   <div>
                     <h4 className="font-semibold mb-1 text-white">実践コミュニティ招待権</h4>
-                    <p className="text-orange-100 text-sm">一人じゃない安心感で最後まで続けられる</p>
+                    <p className="text-orange-100 text-sm">同じ目標を持つ仲間とのディスカッション・質問し放題</p>
                   </div>
                 </div>
               </div>
@@ -139,7 +139,7 @@ export default function NewsletterSectionImproved() {
                     <span aria-hidden="true">🎁</span> 今すぐ特典を受け取る（完全無料）
                   </button>
                   <p id="submit-help" className="text-xs text-gray-500 text-center leading-relaxed">
-                    ※登録後すぐに「100円note作成ガイド」をお送りします<br />
+                    ※登録後すぐに「AI効率化3ステップガイド」をお送りします<br />
                     ※不要になったらいつでも配信停止できます<br />
                     ※初心者向けの内容なので安心してご登録ください
                   </p>
