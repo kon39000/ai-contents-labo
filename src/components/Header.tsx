@@ -27,7 +27,7 @@ export default function Header() {
               ホーム
             </Link>
             <Link href="/about" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
-              私たちについて
+              ACLについて
             </Link>
             <Link href="/webinar" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
               無料ウェビナー
@@ -35,9 +35,6 @@ export default function Header() {
             <Link href="/members" className="text-gray-700 hover:text-orange-600 font-medium transition-colors relative">
               メンバーズ
               <span className="absolute -top-1 -right-2 bg-orange-500 text-white text-xs px-1 py-0.5 rounded-full">NEW</span>
-            </Link>
-            <Link href="/community" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
-              コミュニティ
             </Link>
             <Link href="/blog" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
               ブログ
@@ -78,16 +75,13 @@ export default function Header() {
                 🏠 ホーム
               </Link>
               <Link href="/about" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
-                ℹ️ 私たちについて
+                ℹ️ ACLについて
               </Link>
               <Link href="/webinar" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
                 🎥 無料ウェビナー
               </Link>
               <Link href="/members" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-600 relative" onClick={() => setIsMenuOpen(false)}>
                 🎉 メンバーズ <span className="bg-orange-500 text-white text-xs px-1 py-0.5 rounded-full ml-1">NEW</span>
-              </Link>
-              <Link href="/community" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
-                👥 コミュニティ
               </Link>
               <Link href="/blog" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
                 📝 ブログ
