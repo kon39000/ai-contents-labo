@@ -42,8 +42,8 @@ export default function MemberResultsImproved() {
   ]
 
   return (
-    <section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-gray-50 section">
+      <div className="container-max">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             <span aria-hidden="true">🎉</span> 小さな一歩から始まった成功体験
@@ -54,11 +54,11 @@ export default function MemberResultsImproved() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {memberPosts.map((post) => (
             <article 
               key={post.id} 
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+              className="card card-hover border border-gray-100"
               role="article"
               aria-labelledby={`member-${post.id}-name`}
             >
@@ -97,7 +97,7 @@ export default function MemberResultsImproved() {
         
         {/* CTAセクションを改善 - 1つのメインアクションに絞る */}
         <div className="text-center">
-          <div className="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto border border-orange-100">
+          <div className="card max-w-2xl mx-auto border border-orange-100">
             <div className="text-4xl mb-4" aria-hidden="true">🚀</div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               あなたも同じような成果を出してみませんか？
@@ -137,17 +137,17 @@ export default function MemberResultsImproved() {
         
         {/* 信頼感を高める追加情報 */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <div className="text-center bg-white rounded-lg p-6 shadow border border-orange-100">
+          <div className="text-center card border border-orange-100">
             <div className="text-2xl mb-2" aria-hidden="true">⭐</div>
             <div className="text-2xl font-bold text-orange-600 mb-1">4.8/5</div>
             <div className="text-sm text-gray-600">満足度評価</div>
           </div>
-          <div className="text-center bg-white rounded-lg p-6 shadow border border-cyan-100">
+          <div className="text-center card border border-cyan-100">
             <div className="text-2xl mb-2" aria-hidden="true">👥</div>
             <div className="text-2xl font-bold text-cyan-600 mb-1">85%</div>
             <div className="text-sm text-gray-600">3ヶ月継続率</div>
           </div>
-          <div className="text-center bg-white rounded-lg p-6 shadow border border-purple-100">
+          <div className="text-center card border border-purple-100">
             <div className="text-2xl mb-2" aria-hidden="true">💰</div>
             <div className="text-2xl font-bold text-purple-600 mb-1">78%</div>
             <div className="text-sm text-gray-600">初収益達成率</div>

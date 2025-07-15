@@ -10,8 +10,8 @@ export default function Home() {
       <HeroSectionImproved />
       
       {/* 実績セクションを独立 */}
-      <section className="bg-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section className="bg-white section">
+        <div className="container-max">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
               <span aria-hidden="true">📊</span> 信頼の実績
@@ -19,20 +19,20 @@ export default function Home() {
             <p className="text-gray-600">多くの方にご支持いただいています</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <div className="text-center bg-orange-50 rounded-xl p-6 border border-orange-200">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div className="text-center card bg-orange-50 border border-orange-200">
               <div className="text-2xl md:text-3xl font-bold text-orange-600 mb-2">5,100+</div>
               <div className="text-sm text-gray-600">無料会員</div>
             </div>
-            <div className="text-center bg-cyan-50 rounded-xl p-6 border border-cyan-200">
+            <div className="text-center card bg-cyan-50 border border-cyan-200">
               <div className="text-2xl md:text-3xl font-bold text-cyan-600 mb-2">600+</div>
               <div className="text-sm text-gray-600">有料会員</div>
             </div>
-            <div className="text-center bg-purple-50 rounded-xl p-6 border border-purple-200">
+            <div className="text-center card bg-purple-50 border border-purple-200">
               <div className="text-2xl md:text-3xl font-bold text-purple-600 mb-2">100+</div>
               <div className="text-sm text-gray-600">開催講座</div>
             </div>
-            <div className="text-center bg-green-50 rounded-xl p-6 border border-green-200">
+            <div className="text-center card bg-green-50 border border-green-200">
               <div className="text-2xl md:text-3xl font-bold text-green-600 mb-2">12,000+</div>
               <div className="text-sm text-gray-600">総申込者</div>
             </div>
@@ -45,8 +45,8 @@ export default function Home() {
       <NewsletterSectionImproved />
       
       {/* 他のページへの誘導セクション */}
-      <section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section className="bg-gray-50 section">
+        <div className="container-max">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               <span aria-hidden="true">🚀</span> さらに詳しく知りたい方へ

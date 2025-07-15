@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-12">
+    <footer className="bg-gray-100 text-gray-900 section">
       <div className="container-max">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* ブランド情報 */}
@@ -13,11 +13,11 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="text-xl font-bold">AI Contents Labo</h3>
-                <p className="text-xs text-gray-400">子育て中でもAIで月5万円</p>
+                <p className="text-xs text-gray-600">AI効率化で業務生産性を向上</p>
               </div>
             </div>
-            <p className="text-gray-300 text-sm mb-4">
-              忙しいママ・パパでもAIを活用して継続的な収入を得られるコミュニティです。
+            <p className="text-gray-600 text-sm mb-4">
+              忙しい会社員・主婦でもAIを活用して業務効率化を実現できるコミュニティです。
             </p>
             
             {/* 実績 */}
@@ -35,7 +35,7 @@ export default function Footer() {
           
           {/* サービス */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-orange-400">サービス</h4>
+            <h4 className="text-lg font-semibold mb-4 text-orange-600">サービス</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/webinar" className="text-gray-300 hover:text-white transition-colors">
@@ -62,7 +62,7 @@ export default function Footer() {
           
           {/* コンテンツ */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-cyan-400">コンテンツ</h4>
+            <h4 className="text-lg font-semibold mb-4 text-cyan-600">コンテンツ</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/blog" className="text-gray-300 hover:text-white transition-colors">
@@ -89,7 +89,7 @@ export default function Footer() {
           
           {/* サポート */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-purple-400">サポート</h4>
+            <h4 className="text-lg font-semibold mb-4 text-purple-600">サポート</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/about" className="text-gray-300 hover:text-white transition-colors">

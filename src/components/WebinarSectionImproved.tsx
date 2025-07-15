@@ -2,8 +2,8 @@
 
 export default function WebinarSectionImproved() {
   return (
-    <section id="webinar" className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section id="webinar" className="bg-white section">
+      <div className="container-max">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             <span aria-hidden="true">🎥</span> 週1回 x 15分学習で身につく無料ウェビナー
@@ -66,7 +66,7 @@ export default function WebinarSectionImproved() {
             </div>
             
             <div className="text-center">
-              <div className="bg-white rounded-xl p-8 shadow-lg border border-cyan-100">
+              <div className="card border border-cyan-100">
                 <div className="text-5xl mb-4" aria-hidden="true">🎯</div>
                 <h4 className="text-xl font-bold mb-6 text-gray-900">参加者限定特典</h4>
                 <div className="space-y-4 text-left">

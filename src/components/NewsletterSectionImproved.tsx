@@ -14,8 +14,8 @@ export default function NewsletterSectionImproved() {
   }
 
   return (
-    <section id="newsletter" className="bg-gradient-to-br from-orange-600 to-orange-700 py-16 px-4 sm:px-6 lg:px-8 text-white">
-      <div className="max-w-7xl mx-auto">
+    <section id="newsletter" className="bg-gradient-to-br from-orange-600 to-orange-700 section text-white">
+      <div className="container-max">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             <span aria-hidden="true">🚀</span> 「AI効率化3ステップ」完全ガイドを無料プレゼント！
@@ -79,7 +79,7 @@ export default function NewsletterSectionImproved() {
               </div>
             </div>
             
-            <div className="bg-white rounded-2xl p-8 text-gray-900 shadow-2xl max-w-lg mx-auto w-full">
+            <div className="card text-gray-900 shadow-2xl max-w-lg mx-auto w-full rounded-2xl">
               <div className="text-center mb-6">
                 <div className="text-4xl mb-3" aria-hidden="true">🎯</div>
                 <h3 className="text-2xl font-bold mb-2 text-gray-900">今すぐ無料で受け取る</h3>
