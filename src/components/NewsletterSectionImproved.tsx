@@ -73,8 +73,8 @@ export default function NewsletterSectionImproved() {
               
               <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 mb-6 border border-white/30">
                 <p className="text-sm text-white">
-                  <span className="font-semibold" aria-hidden="true">💝</span> <span className="font-semibold">安心ポイント：</span>
-                  「難しそう」「私にできるかな？」そんな不安を解消する初心者専用の内容です。小さな成功体験から始めて、仲間と一緒に成長しましょう。
+                  <span className="font-semibold" aria-hidden="true">📱</span> <span className="font-semibold">スマホ特化ポイント：</span>
+                  通勤時間や休憩時間でも学習可能！タップ操作だけで完結、音声入力も対応。忙しいあなたのライフスタイルに合わせた特別設計です。
                 </p>
               </div>
             </div>
