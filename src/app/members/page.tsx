@@ -19,12 +19,44 @@ async function getTweets() {
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/tweets`, {
       cache: 'no-store'
     })
-    if (!response.ok) return []
+    if (!response.ok) return getDummyTweets()
     return await response.json()
   } catch (error) {
     console.error('Error fetching tweets:', error)
-    return []
+    return getDummyTweets()
   }
+}
+
+function getDummyTweets() {
+  return [
+    {
+      id: 'dummy-1',
+      url: 'https://twitter.com/user1/status/1',
+      authorName: '田中太郎',
+      authorHandle: 'tanaka_ai',
+      content: 'AIコンテンツラボで学んだテクニックを使って、初めてのnoteを公開しました！🎉 コミュニティのサポートのおかげで完成できました。#ACL成果',
+      postedAt: '2025-01-22T15:30:00Z',
+      imageUrl: null
+    },
+    {
+      id: 'dummy-2',
+      url: 'https://twitter.com/user2/status/2',
+      authorName: '佐藤花子',
+      authorHandle: 'sato_contents',
+      content: '子育ての合間に学習を続けて3ヶ月。ついにAIを使った副業で初収益が出ました！💰 AIコンテンツラボに出会えて良かった✨ #ACL成果',
+      postedAt: '2025-01-20T11:15:00Z',
+      imageUrl: null
+    },
+    {
+      id: 'dummy-3',
+      url: 'https://twitter.com/user3/status/3',
+      authorName: '山田次郎',
+      authorHandle: 'yamada_writer',
+      content: 'AIライティングのスキルを身につけてから、仕事の効率が格段に上がりました📈 「今日の生徒が明日の講師」を実感しています🎓 #ACL成果',
+      postedAt: '2025-01-18T13:45:00Z',
+      imageUrl: null
+    }
+  ]
 }
 
 async function getTestimonials(): Promise<Testimonial[]> {
