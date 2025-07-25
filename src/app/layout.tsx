@@ -7,12 +7,12 @@ import FooterImproved from '@/components/FooterImproved'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AI Contents Labo - 1日15分で100円noteから始める副収入',
-  description: 'AI Contents Laboでは、忙しい会社員・主婦でもAIを活用して継続的な収入を得るためのノウハウを学べます。週1回の無料ウェビナーと実践コミュニティでサポートします。',
-  keywords: 'AI, コンテンツ, 副業, 収入, ウェビナー, メルマガ, 100円note, スキマ時間, 初心者, 会社員, 主婦',
+  title: 'AI Contents Labo - 学ぶだけで終わらせない',
+  description: 'AI Contents Laboでは、学び・実践・仲間づくりを通じて、あなたのコンテンツ力を育てるコミュニティです。今日の生徒が明日の講師。',
+  keywords: 'AI, コンテンツ, 学習, コミュニティ, 実践, 講師, スキル, 成長',
   openGraph: {
-    title: 'AI Contents Labo - 1日15分で100円noteから始める副収入',
-    description: 'AI Contents Laboでは、忙しい会社員・主婦でもAIを活用して継続的な収入を得るためのノウハウを学べます。',
+    title: 'AI Contents Labo - 学ぶだけで終わらせない',
+    description: 'AI Contents Laboでは、学び・実践・仲間づくりを通じて、あなたのコンテンツ力を育てるコミュニティです。',
     type: 'website',
   },
 }

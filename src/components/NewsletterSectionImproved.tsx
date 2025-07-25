@@ -18,11 +18,11 @@ export default function NewsletterSectionImproved() {
       <div className="container-max">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            <span aria-hidden="true">🚀</span> 「AI効率化3ステップ」完全ガイドを無料プレゼント！
+            <span aria-hidden="true">🎓</span> 「ChatGPT15分マスター講座」無料公開中！
           </h2>
           <p className="text-xl text-orange-100 max-w-2xl mx-auto">
-            ChatGPTからVibeコーディングまで<br />
-            業務効率化の完全ロードマップをお届けします
+            メール登録で学習ポータルにアクセス<br />
+            ChatGPTからVibeコーディングまで完全習得
           </p>
         </div>
         
@@ -30,51 +30,51 @@ export default function NewsletterSectionImproved() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-6 text-white">
-                <span aria-hidden="true">🎁</span> 初心者でも安心！AI効率化マスター5大特典
+                <span aria-hidden="true">🎥</span> 学習ポータルで今すぐ体験できること
               </h3>
               
               <div className="space-y-4 mb-8">
                 <div className="flex items-start">
                   <span className="text-yellow-300 text-xl mr-3 mt-1" aria-hidden="true">1️⃣</span>
                   <div>
-                    <h4 className="font-semibold mb-1 text-white">ChatGPT基礎活用ガイド（15分動画）</h4>
-                    <p className="text-orange-100 text-sm">初心者でもすぐに使える実践的な操作方法とコツ</p>
+                    <h4 className="font-semibold mb-1 text-white">ChatGPT15分マスター講座（動画）</h4>
+                    <p className="text-orange-100 text-sm">スマホでも学習可能！初心者向けの完全ガイド</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="text-yellow-300 text-xl mr-3 mt-1" aria-hidden="true">2️⃣</span>
                   <div>
-                    <h4 className="font-semibold mb-1 text-white">Gemini CLI導入実践ガイド（30分動画）</h4>
-                    <p className="text-orange-100 text-sm">コマンドライン初心者でも安心の完全セットアップ手順</p>
+                    <h4 className="font-semibold mb-1 text-white">サイト制作の秘密（動画）</h4>
+                    <p className="text-orange-100 text-sm">このサイトがプログラミング知識ゼロで作られた理由</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="text-yellow-300 text-xl mr-3 mt-1" aria-hidden="true">3️⃣</span>
                   <div>
-                    <h4 className="font-semibold mb-1 text-white">Vibeコーディング入門（45分動画）</h4>
-                    <p className="text-orange-100 text-sm">AIペアプログラミングで開発効率を3倍にする方法</p>
+                    <h4 className="font-semibold mb-1 text-white">Vibeコーディング体験（動画）</h4>
+                    <p className="text-orange-100 text-sm">AIとの対話だけでWebページが完成する様子を実演</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="text-yellow-300 text-xl mr-3 mt-1" aria-hidden="true">4️⃣</span>
                   <div>
-                    <h4 className="font-semibold mb-1 text-white">業務効率化プロンプト集50選（PDF）</h4>
-                    <p className="text-orange-100 text-sm">コピペで使える実践的なプロンプトテンプレート</p>
+                    <h4 className="font-semibold mb-1 text-white">実践エリア・進捗管理</h4>
+                    <p className="text-orange-100 text-sm">学んだ内容をその場で試せる環境＋学習進捗の可視化</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="text-yellow-300 text-xl mr-3 mt-1" aria-hidden="true">5️⃣</span>
                   <div>
-                    <h4 className="font-semibold mb-1 text-white">実践コミュニティ招待権</h4>
-                    <p className="text-orange-100 text-sm">同じ目標を持つ仲間とのディスカッション・質問し放題</p>
+                    <h4 className="font-semibold mb-1 text-white">次のステップ案内</h4>
+                    <p className="text-orange-100 text-sm">無料ウェビナー・コミュニティへの自然な誘導</p>
                   </div>
                 </div>
               </div>
               
               <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 mb-6 border border-white/30">
                 <p className="text-sm text-white">
-                  <span className="font-semibold" aria-hidden="true">📱</span> <span className="font-semibold">スマホ特化ポイント：</span>
-                  通勤時間や休憩時間でも学習可能！タップ操作だけで完結、音声入力も対応。忙しいあなたのライフスタイルに合わせた特別設計です。
+                  <span className="font-semibold" aria-hidden="true">🌟</span> <span className="font-semibold">学習ポータルの特徴：</span>
+                  登録後すぐにアクセス可能！進捗保存機能付きで、いつでも続きから学習できます。スマホ・PC両対応で、あなたのペースで学習を進められます。
                 </p>
               </div>
             </div>
@@ -82,8 +82,8 @@ export default function NewsletterSectionImproved() {
             <div className="card text-gray-900 shadow-2xl max-w-lg mx-auto w-full rounded-2xl">
               <div className="text-center mb-6">
                 <div className="text-4xl mb-3" aria-hidden="true">🎯</div>
-                <h3 className="text-2xl font-bold mb-2 text-gray-900">今すぐ無料で受け取る</h3>
-                <p className="text-gray-600">メールアドレスを入力するだけ</p>
+                <h3 className="text-2xl font-bold mb-2 text-gray-900">学習ポータルにアクセス</h3>
+                <p className="text-gray-600">メール登録で今すぐ学習開始</p>
               </div>
               
               {!isSubmitted ? (
@@ -136,10 +136,10 @@ export default function NewsletterSectionImproved() {
                     className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 rounded-lg transition-all duration-200 text-lg transform hover:scale-105 shadow-lg"
                     aria-describedby="submit-help"
                   >
-                    <span aria-hidden="true">🎁</span> 今すぐ特典を受け取る（完全無料）
+                    <span aria-hidden="true">🎓</span> 学習ポータルにアクセス（完全無料）
                   </button>
                   <p id="submit-help" className="text-xs text-gray-500 text-center leading-relaxed">
-                    ※登録後すぐに「AI効率化3ステップガイド」をお送りします<br />
+                    ※登録後すぐに学習ポータルのアクセス方法をお送りします<br />
                     ※不要になったらいつでも配信停止できます<br />
                     ※初心者向けの内容なので安心してご登録ください
                   </p>
@@ -151,14 +151,20 @@ export default function NewsletterSectionImproved() {
                     登録完了！
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    ご登録いただいたメールアドレスに特典動画をお送りしました。<br />
+                    ご登録いただいたメールアドレスに学習ポータルのアクセス方法をお送りしました。<br />
                     メールをご確認ください。
                   </p>
-                  <div className="bg-gray-50 rounded-lg p-4">
+                  <div className="bg-gray-50 rounded-lg p-4 mb-4">
                     <p className="text-sm text-gray-600">
                       <span aria-hidden="true">📧</span> メールが届かない場合は、迷惑メールフォルダもご確認ください
                     </p>
                   </div>
+                  <a 
+                    href="/learn" 
+                    className="inline-block bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105"
+                  >
+                    🎓 学習ポータルを体験する
+                  </a>
                 </div>
               )}
             </div>

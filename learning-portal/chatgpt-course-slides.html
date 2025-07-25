@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT15分マスター講座 - スライド</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .slide {
+            width: 100%;
+            height: 100vh;
+            display: none;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .slide-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .huge-emoji {
+            font-size: 8rem;
+            line-height: 1;
+        }
+        .big-emoji {
+            font-size: 4rem;
+            line-height: 1;
+        }
+        @media (max-width: 768px) {
+            .huge-emoji { font-size: 5rem; }
+            .big-emoji { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-purple-50">
+    <!-- スライドナビゲーション -->
+    <div class="fixed top-4 right-4 z-50 bg-white rounded-lg shadow-lg p-4">
+        <div class="flex items-center space-x-4">
+            <button onclick="prevSlide()" class="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700">←前へ</button>
+            <span id="slide-counter" class="font-medium">1 / 20</span>
+            <button onclick="nextSlide()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">次へ→</button>
+        </div>
+        <div class="mt-2 text-sm text-gray-600">
+            キーボード: ← → でも操作可能
+        </div>
+    </div>
+
+    <!-- タイトルスライド -->
+    <div class="slide active" data-slide="1">
+        <div class="slide-content text-center">
+            <div class="huge-emoji mb-8">🤖</div>
+            <h1 class="text-6xl md:text-7xl font-bold text-gray-900 mb-6">
+                ChatGPT<br>
+                <span class="text-blue-600">15分マスター講座</span>
+            </h1>
+            <p class="text-2xl md:text-3xl text-gray-700 mb-8">
+                めちゃくちゃ賢い秘書を<br>
+                あなたのスマホに
+            </p>
+            <div class="bg-white rounded-xl shadow-lg p-6 max-w-2xl mx-auto">
+                <p class="text-xl text-gray-600">
+                    AI Contents Labo<br>
+                    講師：[講師名]
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第1章：タイトル -->
+    <div class="slide" data-slide="2">
+        <div class="slide-content text-center">
+            <div class="text-6xl font-bold text-orange-500 mb-4">第1章</div>
+            <div class="huge-emoji mb-8">📖</div>
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
+                ChatGPTって何？
+            </h2>
+            <p class="text-2xl text-gray-700">
+                恐怖心を取り除き、期待感を高める<br>
+                （0:00 - 3:00）
+            </p>
+        </div>
+    </div>
+
+    <!-- 第1章：自己紹介 -->
+    <div class="slide" data-slide="3">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">
+                はじめまして！
+            </h2>
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <div class="text-center mb-6">
+                    <div class="big-emoji">👋</div>
+                </div>
+                <div class="space-y-6 text-xl text-gray-700">
+                    <p>✅ 私も最初は「AI？難しそう...」と思っていました</p>
+                    <p>✅ でも、使ってみたら人生が変わりました</p>
+                    <p>✅ 今では毎日の仕事が半分の時間で終わります</p>
+                    <p class="text-2xl font-bold text-blue-600">
+                        あなたも必ずできます！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第1章：ChatGPTの正体 -->
+    <div class="slide" data-slide="4">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">
+                ChatGPTの正体
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="big-emoji mb-4">💼</div>
+                    <h3 class="text-2xl font-bold mb-2">めちゃくちゃ賢い秘書</h3>
+                    <p class="text-gray-600">何でも相談できる</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="big-emoji mb-4">⏰</div>
+                    <h3 class="text-2xl font-bold mb-2">24時間365日</h3>
+                    <p class="text-gray-600">いつでも対応</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="big-emoji mb-4">🆓</div>
+                    <h3 class="text-2xl font-bold mb-2">無料で使える</h3>
+                    <p class="text-gray-600">基本機能は全部無料</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第1章：今日のゴール -->
+    <div class="slide" data-slide="5">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">
+                15分後のあなた
+            </h2>
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl">1️⃣</span>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">メールが5分で書ける</h3>
+                            <p class="text-gray-600">もう30分も悩まない</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl">2️⃣</span>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">アイデアが湧き出る</h3>
+                            <p class="text-gray-600">企画書もサクサク作成</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl">3️⃣</span>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">長文を3行にまとめる</h3>
+                            <p class="text-gray-600">情報整理が一瞬で</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第2章：タイトル -->
+    <div class="slide" data-slide="6">
+        <div class="slide-content text-center">
+            <div class="text-6xl font-bold text-green-500 mb-4">第2章</div>
+            <div class="huge-emoji mb-8">🚀</div>
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
+                3分で完了！<br>初期設定
+            </h2>
+            <p class="text-2xl text-gray-700">
+                つまづきポイントを回避して確実にスタート<br>
+                （3:00 - 6:00）
+            </p>
+        </div>
+    </div>
+
+    <!-- 第2章：アプリダウンロード -->
+    <div class="slide" data-slide="7">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">
+                まずはアプリをダウンロード
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-center">📱 iPhone の方</h3>
+                    <div class="bg-blue-50 rounded-lg p-4 mb-4">
+                        <p class="text-xl font-bold">App Store で検索</p>
+                        <p class="text-3xl font-bold text-blue-600 mt-2">「ChatGPT」</p>
+                    </div>
+                    <p class="text-gray-600">OpenAI のアプリを選択</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-center">🤖 Android の方</h3>
+                    <div class="bg-green-50 rounded-lg p-4 mb-4">
+                        <p class="text-xl font-bold">Google Play で検索</p>
+                        <p class="text-3xl font-bold text-green-600 mt-2">「ChatGPT」</p>
+                    </div>
+                    <p class="text-gray-600">OpenAI のアプリを選択</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第2章：アカウント作成 -->
+    <div class="slide" data-slide="8">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">
+                アカウント作成（超簡単！）
+            </h2>
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <div class="space-y-6">
+                    <div class="border-2 border-blue-500 rounded-lg p-6">
+                        <h3 class="text-2xl font-bold mb-3 text-blue-600">おすすめ：Googleアカウントで登録</h3>
+                        <p class="text-xl">「Continue with Google」をタップするだけ！</p>
+                        <p class="text-gray-600 mt-2">※パスワードを新しく作る必要なし</p>
+                    </div>
+                    <div class="border rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-3">または：メールアドレスで登録</h3>
+                        <ol class="space-y-2 text-gray-700">
+                            <li>1. メールアドレスを入力</li>
+                            <li>2. パスワードを設定（8文字以上）</li>
+                            <li>3. 確認メールをチェック</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第2章：画面説明 -->
+    <div class="slide" data-slide="9">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">
+                画面の見方（超シンプル！）
+            </h2>
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <div class="border-4 border-gray-300 rounded-lg p-4 mb-6">
+                    <div class="bg-gray-100 rounded-lg p-4 mb-4 text-center">
+                        <p class="text-gray-500">会話が表示される場所</p>
+                        <div class="mt-4 space-y-2">
+                            <div class="bg-blue-100 rounded-lg p-3 text-left">
+                                <p class="text-sm text-gray-600">あなた</p>
+                                <p>こんにちは</p>
+                            </div>
+                            <div class="bg-gray-200 rounded-lg p-3 text-left">
+                                <p class="text-sm text-gray-600">ChatGPT</p>
+                                <p>こんにちは！何かお手伝いできることはありますか？</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-2 border-blue-500 rounded-lg p-3 flex items-center">
+                        <input type="text" placeholder="ここに質問を入力" class="flex-1 outline-none" disabled>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg ml-2">送信</button>
+                    </div>
+                </div>
+                <p class="text-xl text-center font-bold text-green-600">
+                    たったこれだけ！
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第3章：タイトル -->
+    <div class="slide" data-slide="10">
+        <div class="slide-content text-center">
+            <div class="text-6xl font-bold text-purple-500 mb-4">第3章</div>
+            <div class="huge-emoji mb-8">💼</div>
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
+                仕事が楽になる<br>3つの使い方
+            </h2>
+            <p class="text-2xl text-gray-700">
+                即効性のある実践例で価値を実感<br>
+                （6:00 - 9:00）
+            </p>
+        </div>
+    </div>
+
+    <!-- 第3章：メール作成 -->
+    <div class="slide" data-slide="11">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">
+                使い方① メール作成
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">こう質問する</h3>
+                    <div class="bg-blue-50 rounded-xl p-6 font-mono text-lg">
+                        取引先への会議日程変更の<br>
+                        お詫びメールを作って。<br>
+                        丁寧な感じで。
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-600">こんな返事が！</h3>
+                    <div class="bg-green-50 rounded-xl p-6 text-sm">
+                        <p class="font-bold mb-2">件名：会議日程変更のお詫び</p>
+                        <p>いつもお世話になっております。</p>
+                        <p class="mt-2">先日お約束させていただいた会議の件ですが、誠に申し訳ございませんが、急な予定が入ってしまい、日程を変更させていただけないでしょうか。</p>
+                        <p class="mt-2">ご迷惑をおかけして大変恐縮ですが...</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-2xl font-bold text-orange-600 mt-6">
+                30分かかっていたメール作成が5分に！
+            </p>
+        </div>
+    </div>
+
+    <!-- 第3章：アイデア出し -->
+    <div class="slide" data-slide="12">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">
+                使い方② アイデア出し
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">こう質問する</h3>
+                    <div class="bg-blue-50 rounded-xl p-6 font-mono text-lg">
+                        子供の誕生日パーティーの<br>
+                        アイデアを5つ教えて。<br>
+                        予算1万円以内で。
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-600">こんな返事が！</h3>
+                    <div class="bg-green-50 rounded-xl p-6 text-sm space-y-2">
+                        <p>1. 🎨 お絵かきパーティー（画材セット：3,000円）</p>
+                        <p>2. 🍕 手作りピザパーティー（材料費：4,000円）</p>
+                        <p>3. 🎭 仮装パーティー（衣装小物：5,000円）</p>
+                        <p>4. 🎪 ミニ縁日（景品・飾り：6,000円）</p>
+                        <p>5. 🎬 映画鑑賞会（お菓子付き：3,000円）</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-2xl font-bold text-orange-600 mt-6">
+                アイデアに困ることがなくなる！
+            </p>
+        </div>
+    </div>
+
+    <!-- 第3章：要約・整理 -->
+    <div class="slide" data-slide="13">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">
+                使い方③ 要約・整理
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">こう質問する</h3>
+                    <div class="bg-blue-50 rounded-xl p-6 font-mono text-lg">
+                        この長い文章を<br>
+                        3行でまとめて：<br>
+                        <span class="text-sm text-gray-600">[ここに文章をコピペ]</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-600">こんな返事が！</h3>
+                    <div class="bg-green-50 rounded-xl p-6">
+                        <p class="font-bold mb-3">要約：</p>
+                        <p>1. 重要なポイント1つ目</p>
+                        <p>2. 重要なポイント2つ目</p>
+                        <p>3. 結論・まとめ</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-2xl font-bold text-orange-600 mt-6">
+                情報整理が一瞬で完了！
+            </p>
+        </div>
+    </div>
+
+    <!-- 第4章：タイトル -->
+    <div class="slide" data-slide="14">
+        <div class="slide-content text-center">
+            <div class="text-6xl font-bold text-red-500 mb-4">第4章</div>
+            <div class="huge-emoji mb-8">⚡</div>
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
+                スマホで<br>最速活用術
+            </h2>
+            <p class="text-2xl text-gray-700">
+                日常的に使い続けられる習慣化のコツ<br>
+                （9:00 - 12:00）
+            </p>
+        </div>
+    </div>
+
+    <!-- 第4章：音声入力 -->
+    <div class="slide" data-slide="15">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">
+                秘技：音声入力で爆速化
+            </h2>
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <div class="text-center mb-8">
+                    <div class="huge-emoji">🎤</div>
+                </div>
+                <div class="space-y-6 text-xl">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-3xl">1️⃣</span>
+                        <p>キーボードのマイクボタンをタップ</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-3xl">2️⃣</span>
+                        <p>話すだけで文字入力完了</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-3xl">3️⃣</span>
+                        <p>歩きながらでも使える！</p>
+                    </div>
+                </div>
+                <div class="bg-yellow-50 rounded-lg p-6 mt-8">
+                    <p class="text-xl font-bold text-yellow-800">
+                        💡 ポイント：句読点も「まる」「てん」と言えばOK！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第4章：無料版で十分 -->
+    <div class="slide" data-slide="16">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">
+                無料版で十分な理由
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-green-50 rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-green-600">
+                        🆓 無料版でできること
+                    </h3>
+                    <ul class="space-y-3 text-lg">
+                        <li>✅ 質問し放題</li>
+                        <li>✅ メール作成</li>
+                        <li>✅ アイデア出し</li>
+                        <li>✅ 翻訳・要約</li>
+                        <li>✅ プログラミング相談</li>
+                        <li>✅ 学習サポート</li>
+                    </ul>
+                    <p class="mt-6 text-xl font-bold text-green-700">
+                        ほぼ全部できる！
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-600">
+                        💎 有料版の追加機能
+                    </h3>
+                    <ul class="space-y-3 text-lg text-gray-600">
+                        <li>• 画像生成</li>
+                        <li>• ファイル分析</li>
+                        <li>• 最新情報検索</li>
+                        <li>• 応答速度UP</li>
+                    </ul>
+                    <p class="mt-6 text-lg text-gray-500">
+                        まずは無料版で慣れてから
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第5章：タイトル -->
+    <div class="slide" data-slide="17">
+        <div class="slide-content text-center">
+            <div class="text-6xl font-bold text-indigo-500 mb-4">第5章</div>
+            <div class="huge-emoji mb-8">🎯</div>
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
+                明日から実践！<br>次のステップ
+            </h2>
+            <p class="text-2xl text-gray-700">
+                継続的な学習への動機付け<br>
+                （12:00 - 15:00）
+            </p>
+        </div>
+    </div>
+
+    <!-- 第5章：今日の復習 -->
+    <div class="slide" data-slide="18">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">
+                今日の重要ポイント
+            </h2>
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <div class="space-y-6">
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-2xl font-bold mb-3 text-blue-600">1. ChatGPTは「賢い秘書」</h3>
+                        <p class="text-lg">何でも相談できる相棒として使う</p>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-6">
+                        <h3 class="text-2xl font-bold mb-3 text-green-600">2. 具体的に質問する</h3>
+                        <p class="text-lg">「〜を作って」「〜について教えて」</p>
+                    </div>
+                    <div class="bg-purple-50 rounded-lg p-6">
+                        <h3 class="text-2xl font-bold mb-3 text-purple-600">3. 音声入力で楽々</h3>
+                        <p class="text-lg">タイピング不要、話すだけでOK</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第5章：明日やること -->
+    <div class="slide" data-slide="19">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">
+                明日から試す3つのこと
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-yellow-50 rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">
+                        ☀️ 朝一番
+                    </h3>
+                    <p class="text-xl">「今日のスケジュールを効率的にする方法を教えて」</p>
+                    <p class="text-gray-600 mt-2">→ 1日の計画が立てやすくなる</p>
+                </div>
+                <div class="bg-orange-50 rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">
+                        🍽️ 昼休み
+                    </h3>
+                    <p class="text-xl">「〇〇駅周辺のおすすめランチを教えて」</p>
+                    <p class="text-gray-600 mt-2">→ ランチ選びが楽しくなる</p>
+                </div>
+                <div class="bg-blue-50 rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">
+                        🌙 帰宅後
+                    </h3>
+                    <p class="text-xl">「今日あった良いことを日記風に書いて」</p>
+                    <p class="text-gray-600 mt-2">→ 振り返りの習慣ができる</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 最終スライド -->
+    <div class="slide" data-slide="20">
+        <div class="slide-content text-center">
+            <h2 class="text-5xl font-bold text-gray-900 mb-8">
+                衝撃の事実...
+            </h2>
+            <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                <p class="text-3xl mb-6">
+                    実は、このサイトも...<br>
+                    <span class="text-blue-600 font-bold">AIで作りました！</span>
+                </p>
+                <p class="text-xl text-gray-700 mb-8">
+                    プログラミング知識ゼロでも<br>
+                    こんなサイトが作れる時代に
+                </p>
+                <div class="big-emoji">🤯</div>
+            </div>
+            <div class="space-y-4">
+                <a href="#" class="inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold py-4 px-8 rounded-lg text-xl hover:scale-105 transition-transform">
+                    次の講座：サイト制作の秘密を見る
+                </a>
+                <p class="text-gray-600">
+                    さらに深くAIを学びたい方へ
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 20;
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            if (n > totalSlides) currentSlide = 1;
+            if (n < 1) currentSlide = totalSlides;
+            
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[currentSlide - 1].classList.add('active');
+            
+            document.getElementById('slide-counter').textContent = `${currentSlide} / ${totalSlides}`;
+        }
+
+        function nextSlide() {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide--;
+            showSlide(currentSlide);
+        }
+
+        // キーボード操作
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+
+        // 初期表示
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
