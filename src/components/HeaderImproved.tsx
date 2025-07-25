@@ -34,6 +34,9 @@ export default function HeaderImproved() {
             <Link href="/about-us" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
               About Us
             </Link>
+            <span className="text-gray-400 font-medium cursor-not-allowed">
+              Blog (準備中)
+            </span>
             <Link href="/newsletter" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
               Newsletter
             </Link>
@@ -76,6 +79,9 @@ export default function HeaderImproved() {
               <Link href="/about-us" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
                 ℹ️ About Us
               </Link>
+              <span className="block px-4 py-2 text-gray-400 cursor-not-allowed">
+                📝 Blog (準備中)
+              </span>
               <Link href="/newsletter" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
                 📧 Newsletter
               </Link>
