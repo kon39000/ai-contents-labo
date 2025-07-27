@@ -153,7 +153,7 @@ export default function RoadmapSection() {
               詳細を確認する
             </a>
             <a 
-              href="https://vibe-mail.vercel.app/"
+              href="https://nmo1.com/p/r/DfDZJpzk"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"

@@ -93,7 +93,7 @@ export default function TestimonialsSection() {
             あなたも「今日の生徒が明日の講師」を体験してみませんか？
           </p>
           <a 
-            href="https://vibe-mail.vercel.app/"
+            href="https://nmo1.com/p/r/DfDZJpzk"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"

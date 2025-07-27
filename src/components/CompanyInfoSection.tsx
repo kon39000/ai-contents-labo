@@ -116,7 +116,7 @@ export default function CompanyInfoSection() {
             <div className="mt-12 text-center">
               <div className="inline-flex items-center space-x-4">
                 <a 
-                  href="https://vibe-mail.vercel.app/"
+                  href="https://nmo1.com/p/r/DfDZJpzk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
