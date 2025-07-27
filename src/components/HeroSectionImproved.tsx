@@ -27,10 +27,28 @@ export default function HeroSectionImproved() {
             あなたのコンテンツ力を育てるコミュニティです。
           </p>
           
+          {/* 特典動画紹介 */}
+          <div className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-6 mb-8 max-w-3xl mx-auto border border-orange-200 shadow-lg">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                🎁 特典動画プレゼント
+              </h3>
+              <p className="text-lg text-gray-700 mb-4">
+                <span className="font-semibold text-orange-600">０から始めるバイブコーディング</span>
+              </p>
+              <p className="text-gray-600 mb-4">
+                初心者向けの動画講座5本をプレゼント！<br />
+                基礎から丁寧に解説した特別コンテンツです。
+              </p>
+            </div>
+          </div>
+
           {/* メインCTA */}
           <div className="mt-8 mb-12">
             <Link 
-              href="/newsletter"
+              href="https://vibe-mail.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200 text-lg"
             >
               特典動画を受け取る（無料）

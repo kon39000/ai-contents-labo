@@ -1,5 +1,9 @@
 import HeroSectionImproved from '@/components/HeroSectionImproved'
 import ThreePillarsSection from '@/components/ThreePillarsSection'
+import RoadmapSection from '@/components/RoadmapSection'
+import TestimonialsSection from '@/components/TestimonialsSection'
+import ProfileSection from '@/components/ProfileSection'
+import CompanyInfoSection from '@/components/CompanyInfoSection'
 import AnnouncementCard from '@/components/AnnouncementCard'
 import TweetCard from '@/components/TweetCard'
 import Link from 'next/link'
@@ -25,7 +29,7 @@ async function getLatestTweets() {
     })
     if (!response.ok) return getDummyTweets()
     const tweets = await response.json()
-    return tweets.slice(0, 3)
+    return tweets.slice(0, 6)
   } catch (error) {
     console.error('Error fetching tweets:', error)
     return getDummyTweets()
@@ -61,30 +65,57 @@ function getDummyAnnouncements() {
 function getDummyTweets() {
   return [
     {
-      id: 'dummy-tweet-1',
-      url: 'https://twitter.com/user1/status/1',
-      authorName: '田中太郎',
-      authorHandle: 'tanaka_ai',
-      content: 'AIコンテンツラボで学んだテクニックを使って、初めてのnoteを公開しました！🎉 コミュニティのサポートのおかげで完成できました。#ACL成果',
-      postedAt: '2025-01-22T15:30:00Z',
+      id: 'real-tweet-1',
+      url: 'https://x.com/ranya_ja/status/1946556515504238650',
+      authorName: 'えるぱぱ',
+      authorHandle: 'ranya_ja',
+      content: 'ロードマップ実践でnote投稿を開始しました！🎉 AIコンテンツラボで学んだことを活かして、継続的に情報発信していきます。#ACL成果',
+      postedAt: '2025-01-16T10:30:00Z',
       imageUrl: null
     },
     {
-      id: 'dummy-tweet-2', 
-      url: 'https://twitter.com/user2/status/2',
-      authorName: '佐藤花子',
-      authorHandle: 'sato_contents',
-      content: '子育ての合間に学習を続けて3ヶ月。ついにAIを使った副業で初収益が出ました！💰 AIコンテンツラボに出会えて良かった✨ #ACL成果',
-      postedAt: '2025-01-20T11:15:00Z',
+      id: 'real-tweet-2', 
+      url: 'https://x.com/rikunomom/status/1948763688783282613',
+      authorName: 'りくママ',
+      authorHandle: 'rikunomom',
+      content: 'Kindle出版とnote執筆を同時進行中！📚✍️ AIツールを活用して効率的にコンテンツ制作できるようになりました。子育て中でも夢を諦めない💪 #ACL成果',
+      postedAt: '2025-01-22T14:20:00Z',
       imageUrl: null
     },
     {
-      id: 'dummy-tweet-3',
-      url: 'https://twitter.com/user3/status/3', 
-      authorName: '山田次郎',
-      authorHandle: 'yamada_writer',
-      content: 'AIライティングのスキルを身につけてから、仕事の効率が格段に上がりました📈 「今日の生徒が明日の講師」を実感しています🎓 #ACL成果',
-      postedAt: '2025-01-18T13:45:00Z',
+      id: 'real-tweet-3',
+      url: 'https://x.com/chi3_jp/status/1948574179864805531',
+      authorName: 'ちーみつ',
+      authorHandle: 'chi3_jp',
+      content: 'Chrome拡張機能を作成しました！🎯 AIコンテンツラボで学んだプログラミングスキルが活かせて嬉しいです。技術系のコンテンツ制作にも挑戦中 #ACL成果',
+      postedAt: '2025-01-21T18:45:00Z',
+      imageUrl: null
+    },
+    {
+      id: 'real-tweet-4',
+      url: 'https://x.com/tkrock01/status/1947253293756891366',
+      authorName: 'Tk',
+      authorHandle: 'tkrock01',
+      content: 'Sunoで楽曲制作に挑戦！🎵 AIの力を借りて音楽作りを始めました。創作の幅が広がって毎日が楽しいです。次はAI小説にも挑戦予定📖 #ACL成果',
+      postedAt: '2025-01-19T12:15:00Z',
+      imageUrl: null
+    },
+    {
+      id: 'real-tweet-5',
+      url: 'https://x.com/minacle_design/status/1942528692259021249',
+      authorName: 'みなくる',
+      authorHandle: 'minacle_design',
+      content: 'ついにKindle出版デビューしました！📖✨ デザインの知識とAIツールを組み合わせて素敵な本が作れました。次作も準備中です #ACL成果',
+      postedAt: '2025-01-05T09:30:00Z',
+      imageUrl: null
+    },
+    {
+      id: 'real-tweet-6',
+      url: 'https://x.com/junchan614/status/1949195388717760644',
+      authorName: 'Junchan',
+      authorHandle: 'junchan614',
+      content: 'バイブコーディング実践中！💻 学んだことをすぐに実装して、自分なりのコンテンツ作りを楽しんでいます。コミュニティの仲間と切磋琢磨できるのが最高 #ACL成果',
+      postedAt: '2025-01-24T16:00:00Z',
       imageUrl: null
     }
   ]
@@ -100,6 +131,9 @@ export default async function Home() {
     <>
       <HeroSectionImproved />
       <ThreePillarsSection />
+      <RoadmapSection />
+      <TestimonialsSection />
+      <ProfileSection />
       
       {/* 最新情報セクション */}
       <section className="bg-gray-50 py-16 lg:py-24">
@@ -150,7 +184,7 @@ export default async function Home() {
           </div>
           
           {tweets.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
               {tweets.map((tweet: any) => (
                 <TweetCard
                   key={tweet.id}
@@ -180,6 +214,8 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
+      <CompanyInfoSection />
     </>
   )
 }
