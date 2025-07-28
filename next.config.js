@@ -1,12 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['cdn.sanity.io'],
+    domains: [],
   },
   output: 'standalone',
-  experimental: {
-    outputFileTracingRoot: undefined,
-  },
   async headers() {
     return [
       {
