@@ -11,7 +11,7 @@ import Link from 'next/link'
 async function getLatestAnnouncements() {
   try {
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/announcements`, {
-      cache: 'no-store'
+      next: { revalidate: 3600 }
     })
     if (!response.ok) return getDummyAnnouncements()
     const announcements = await response.json()
@@ -25,7 +25,7 @@ async function getLatestAnnouncements() {
 async function getLatestTweets() {
   try {
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/tweets`, {
-      cache: 'no-store'
+      next: { revalidate: 3600 }
     })
     if (!response.ok) return getDummyTweets()
     const tweets = await response.json()
