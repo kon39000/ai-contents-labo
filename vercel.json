@@ -9,8 +9,10 @@
   },
   "env": {
     "NEXT_PUBLIC_SANITY_PROJECT_ID": "lao1x3f8",
-    "NEXT_PUBLIC_SANITY_DATASET": "production"
+    "NEXT_PUBLIC_SANITY_DATASET": "production",
+    "NEXT_PUBLIC_BASE_URL": "https://ai-contents-labo.com"
   },
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "outputDirectory": ".next"
 }
