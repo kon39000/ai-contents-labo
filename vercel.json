@@ -10,5 +10,7 @@
   "env": {
     "NEXT_PUBLIC_SANITY_PROJECT_ID": "lao1x3f8",
     "NEXT_PUBLIC_SANITY_DATASET": "production"
-  }
+  },
+  "cleanUrls": true,
+  "trailingSlash": false
 }
