@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'AI Contents Labo - 学ぶだけで終わらせない',
   description: 'AI Contents Laboでは、学び・実践・仲間づくりを通じて、あなたのコンテンツ力を育てるコミュニティです。今日の生徒が明日の講師。',
   keywords: 'AI, コンテンツ, 学習, コミュニティ, 実践, 講師, スキル, 成長',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+  },
   openGraph: {
     title: 'AI Contents Labo - 学ぶだけで終わらせない',
     description: 'AI Contents Laboでは、学び・実践・仲間づくりを通じて、あなたのコンテンツ力を育てるコミュニティです。',

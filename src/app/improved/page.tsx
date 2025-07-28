@@ -78,6 +78,7 @@ export default function ImprovedPage() {
               href="/community" 
               className="bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 border border-cyan-100 hover:border-cyan-200 block group"
               aria-label="コミュニティ詳細を見る"
+              prefetch={false}
             >
               <div className="text-4xl mb-4" aria-hidden="true">👥</div>
               <h3 className="text-xl font-bold text-cyan-700 mb-3 group-hover:text-cyan-600">コミュニティ詳細</h3>

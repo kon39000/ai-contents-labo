@@ -43,7 +43,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/community" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/community" className="text-gray-300 hover:text-white transition-colors" prefetch={false}>
                   実践コミュニティ
                 </Link>
               </li>
@@ -75,12 +75,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/resources" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/resources" className="text-gray-300 hover:text-white transition-colors" prefetch={false}>
                   学習リソース
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/faq" className="text-gray-300 hover:text-white transition-colors" prefetch={false}>
                   よくある質問
                 </Link>
               </li>
@@ -102,12 +102,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/privacy" className="text-gray-300 hover:text-white transition-colors" prefetch={false}>
                   プライバシーポリシー
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/terms" className="text-gray-300 hover:text-white transition-colors" prefetch={false}>
                   利用規約
                 </Link>
               </li>

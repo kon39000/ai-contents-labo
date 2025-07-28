@@ -167,6 +167,7 @@ export default async function Home() {
             <Link 
               href="/news"
               className="inline-flex items-center text-cyan-600 hover:text-cyan-700 font-medium transition-colors"
+              prefetch={false}
             >
               もっと見る →
             </Link>
@@ -208,6 +209,7 @@ export default async function Home() {
             <Link 
               href="/members"
               className="inline-flex items-center text-cyan-600 hover:text-cyan-700 font-medium transition-colors"
+              prefetch={false}
             >
               もっと見る →
             </Link>
