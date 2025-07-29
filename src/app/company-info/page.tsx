@@ -41,7 +41,7 @@ export default function CompanyInfoPage() {
                       </div>
                       <div>
                         <span className="font-semibold text-gray-700">代表者：</span>
-                        <span className="text-gray-600">勝沼知世（こん）</span>
+                        <span className="text-gray-600">こん（Kon）</span>
                       </div>
                       <div>
                         <span className="font-semibold text-gray-700">設立：</span>

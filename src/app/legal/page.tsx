@@ -37,7 +37,7 @@ export default function LegalPage() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <dt className="font-semibold text-gray-700">代表者</dt>
-                  <dd className="md:col-span-2 text-gray-600">勝沼知世（こん）</dd>
+                  <dd className="md:col-span-2 text-gray-600">こん（Kon）</dd>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <dt className="font-semibold text-gray-700">所在地</dt>

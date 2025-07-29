@@ -51,21 +51,21 @@ function getDummyAnnouncements() {
       title: 'Voicyチャンネル開設のお知らせ',
       body: '公式Voicyチャンネルを開設しました！音声で学習できる新しいコンテンツを定期配信します。',
       linkUrl: 'https://voicy.jp/channel/821951',
-      publishedAt: '2025-01-28T10:00:00Z'
+      publishedAt: '2025-07-29T10:00:00Z'
     },
     {
       id: 'dummy-2',
       title: 'AIプログラミングでマネタイズを実現するための第一歩',
       body: '無料ウェビナーを開催します。日時：2025年7月30日（水）12:00〜13:00、講師：むなかたさん、会場：Zoomウェビナー',
       linkUrl: 'https://nmo-event.peatix.com',
-      publishedAt: '2025-01-25T09:00:00Z'
+      publishedAt: '2025-07-29T09:00:00Z'
     },
     {
       id: 'dummy-3',
-      title: 'AIコンテンツラボ新機能リリース',
-      body: '新しい学習機能とコミュニティ機能をリリースしました。より充実した学習体験をお届けします。',
+      title: 'AIコンテンツラボ公式サイトリリース',
+      body: 'AIコンテンツラボの公式サイトが正式にリリースされました！最新の学習コンテンツやコミュニティ情報を随時更新していきます。',
       linkUrl: null,
-      publishedAt: '2025-01-20T14:30:00Z'
+      publishedAt: '2025-07-29T14:30:00Z'
     }
   ]
 }
@@ -212,11 +212,6 @@ export default async function Home() {
       <HeroSectionImproved />
       <StatsSection />
       <ProblemSection />
-      <LearningStepsSection />
-      <ThreePillarsSection />
-      <RoadmapSection />
-      <TestimonialsSection />
-      <OperatorInfoSection />
       
       {/* 最新情報セクション */}
       <section id="latest-news" className="bg-gray-50 py-16 lg:py-24">
@@ -257,7 +252,11 @@ export default async function Home() {
         </div>
       </section>
 
-
+      <LearningStepsSection />
+      <ThreePillarsSection />
+      <RoadmapSection />
+      <TestimonialsSection />
+      <OperatorInfoSection />
       <CompanyInfoSection />
     </>
   )
