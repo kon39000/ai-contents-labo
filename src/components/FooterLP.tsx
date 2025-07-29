@@ -11,11 +11,11 @@ export default function FooterLP() {
               </div>
               <div>
                 <h3 className="text-xl font-bold">AI Contents Labo</h3>
-                <p className="text-xs text-gray-400">1日15分で100円noteから始める</p>
+                <p className="text-xs text-gray-400">今日の学びを、明日の力に</p>
               </div>
             </div>
             <p className="text-gray-300 text-sm mb-4 max-w-2xl mx-auto">
-              忙しい会社員・主婦でもAIを活用して継続的な収入を得られるコミュニティです。
+              忙しい会社員・主婦でもAIを活用してスキルアップできるコミュニティです。
             </p>
           </div>
           
@@ -30,6 +30,19 @@ export default function FooterLP() {
               </a>
               <a href="https://nmo1.com/p/r/DfDZJpzk" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 📧 メルマガ登録
+              </a>
+            </div>
+            
+            {/* 法的リンク */}
+            <div className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4 mb-4 text-xs">
+              <a href="/company-info" className="text-gray-400 hover:text-gray-300 transition-colors">
+                運営会社
+              </a>
+              <a href="/legal" className="text-gray-400 hover:text-gray-300 transition-colors">
+                特定商取引法に基づく表記
+              </a>
+              <a href="/privacy" className="text-gray-400 hover:text-gray-300 transition-colors">
+                プライバシーポリシー
               </a>
             </div>
             

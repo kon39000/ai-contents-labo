@@ -24,22 +24,28 @@ export default function HeaderLP() {
           {/* ナビゲーションリンク */}
           <nav className="hidden md:flex items-center space-x-6">
             <Link 
-              href="/company-info" 
+              href="/" 
               className="text-gray-600 hover:text-orange-600 text-sm font-medium transition-colors"
             >
-              運営会社
+              HOME
             </Link>
             <Link 
-              href="/privacy" 
+              href="/news" 
               className="text-gray-600 hover:text-orange-600 text-sm font-medium transition-colors"
             >
-              プライバシーポリシー
+              最新情報
             </Link>
             <Link 
-              href="/terms" 
+              href="/operator" 
               className="text-gray-600 hover:text-orange-600 text-sm font-medium transition-colors"
             >
-              利用規約
+              運営者
+            </Link>
+            <Link 
+              href="/contact" 
+              className="text-gray-600 hover:text-orange-600 text-sm font-medium transition-colors"
+            >
+              お問い合わせ
             </Link>
             <a 
               href="https://nmo1.com/p/r/DfDZJpzk" 
@@ -61,22 +67,28 @@ export default function HeaderLP() {
               </summary>
               <div className="absolute right-0 top-full mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
                 <Link 
-                  href="/company-info" 
+                  href="/" 
                   className="block px-4 py-2 text-gray-600 hover:text-orange-600 hover:bg-gray-50 text-sm"
                 >
-                  運営会社
+                  HOME
                 </Link>
                 <Link 
-                  href="/privacy" 
+                  href="/news" 
                   className="block px-4 py-2 text-gray-600 hover:text-orange-600 hover:bg-gray-50 text-sm"
                 >
-                  プライバシーポリシー
+                  最新情報
                 </Link>
                 <Link 
-                  href="/terms" 
+                  href="/operator" 
                   className="block px-4 py-2 text-gray-600 hover:text-orange-600 hover:bg-gray-50 text-sm"
                 >
-                  利用規約
+                  運営者
+                </Link>
+                <Link 
+                  href="/contact" 
+                  className="block px-4 py-2 text-gray-600 hover:text-orange-600 hover:bg-gray-50 text-sm"
+                >
+                  お問い合わせ
                 </Link>
                 <div className="border-t border-gray-200 mt-2 pt-2">
                   <a 
