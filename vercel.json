@@ -2,14 +2,7 @@
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "functions": {
-    "api/fetchTweets/index.ts": {
-      "maxDuration": 30
-    }
-  },
   "env": {
-    "NEXT_PUBLIC_SANITY_PROJECT_ID": "lao1x3f8",
-    "NEXT_PUBLIC_SANITY_DATASET": "production",
     "NEXT_PUBLIC_BASE_URL": "https://ai-contents-labo.com"
   },
   "cleanUrls": true,
