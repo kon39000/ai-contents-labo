@@ -16,15 +16,15 @@ export default function HeroSectionImproved() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            学ぶだけで終わらせない。<br />
-            <span className="text-orange-600">作り、発信し、</span><br />
-            <span className="text-cyan-600">誰かの先生になろう。</span>
+            今日の学びを、明日の力に。<br />
+            <span className="text-orange-600">AIで"できる自分"を</span><br />
+            <span className="text-cyan-600">育てる実践ラボ</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-4xl mx-auto leading-relaxed">
-            <span className="font-semibold text-orange-600">「今日の生徒が明日の講師」</span><br />
-            AIコンテンツラボは、学び・実践・仲間づくりを通じて、<br />
-            あなたのコンテンツ力を育てるコミュニティです。
+            <span className="font-semibold text-orange-600">学びをスキルに変える場所</span><br />
+            AIコンテンツラボは、実践重視のコミュニティで<br />
+            質問・学習・成長を全力サポートします。
           </p>
           
           {/* 特典動画紹介 */}

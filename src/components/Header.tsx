@@ -29,15 +29,12 @@ export default function Header() {
             <Link href="/about" className="h-full flex items-center text-gray-700 hover:text-orange-600 font-medium transition-colors duration-150">
               ACLについて
             </Link>
-            <Link href="/webinar" className="h-full flex items-center text-gray-700 hover:text-orange-600 font-medium transition-colors duration-150">
+            <a href="https://vibecoding-monetize.peatix.com/view" target="_blank" rel="noopener noreferrer" className="h-full flex items-center text-gray-700 hover:text-orange-600 font-medium transition-colors duration-150">
               無料ウェビナー
-            </Link>
+            </a>
             <Link href="/members" className="h-full flex items-center text-gray-700 hover:text-orange-600 font-medium transition-colors duration-150 relative">
               メンバーズ
               <span className="absolute -top-1 -right-2 bg-orange-500 text-white text-xs px-1 py-0.5 rounded-full">NEW</span>
-            </Link>
-            <Link href="/blog" className="h-full flex items-center text-gray-700 hover:text-orange-600 font-medium transition-colors duration-150">
-              ブログ
             </Link>
             <Link href="/contact" className="h-full flex items-center text-gray-700 hover:text-orange-600 font-medium transition-colors duration-150">
               お問い合わせ
@@ -78,14 +75,11 @@ export default function Header() {
               <Link href="/about" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
                 ℹ️ ACLについて
               </Link>
-              <Link href="/webinar" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
+              <a href="https://vibecoding-monetize.peatix.com/view" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
                 🎥 無料ウェビナー
-              </Link>
+              </a>
               <Link href="/members" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-600 relative" onClick={() => setIsMenuOpen(false)}>
                 🎉 メンバーズ <span className="bg-orange-500 text-white text-xs px-1 py-0.5 rounded-full ml-1">NEW</span>
-              </Link>
-              <Link href="/blog" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
-                📝 ブログ
               </Link>
               <Link href="/success-stories" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
                 🏆 成功事例

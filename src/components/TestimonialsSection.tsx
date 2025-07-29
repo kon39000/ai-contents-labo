@@ -10,39 +10,39 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: '1',
-    name: 'gakushi',
-    content: 'udemyが作成できるようになったのが大きいです。また、作ったwebアプリのモニターになってくれる人がいたり、メルマガに入ってくれる人がいたり、コミュニティを通じて繋がりが出来て嬉しいです。',
-    highlight: 'コミュニティを通じて繋がりが出来て嬉しい'
+    name: 'gakushiさん',
+    content: 'udemyが作成できるようになったのが大きいです。また、作ったwebアプリのモニターになってくれる人がいたり、メルマガに入ってくれる人がいたり、コミュニティを通じて繋がりが出来て嬉しいです。udemyの共同セールで、たくさんのリストが得られたことは強烈な成功体験でした。',
+    highlight: 'AIを試せる遊び場'
   },
   {
     id: '2',
-    name: 'てつ',
-    content: '今までの講座をアーカイブで見れるようになったこと。なるべくお金をかけずに、AIの最新ツールを学びたい人におすすめ。',
-    highlight: 'みんなでわちゃわちゃたのしくAIを学べる場所'
+    name: 'Tさん',
+    content: 'セミナーが出来るようになりました（上手い下手は別として、行動を起こすことができました）。AIのハイレベルな活用法を知る事が出来る。探す手間が省けるのが嬉しい。',
+    highlight: '学びの場'
   },
   {
     id: '3',
-    name: 'Shinya',
-    content: '今まではロム専だったのに情報発信する意欲がわくようになったし、実際発信できるようになった。どんなことを書いても、Konさんが一言コメントくれること！これ、他のコミュニティには絶対ないです！',
-    highlight: '情報発信する意欲がわくようになった'
+    name: 'てつさん',
+    content: 'noteのプロフィールをAIで整えた、Feloを使えるようになった。今までの講座をアーカイブで見れるようになったこと。',
+    highlight: 'みんなでわちゃわちゃたのしくAIを学べる場所'
   },
   {
     id: '4',
-    name: 'かもとり',
-    content: 'Claudeを使って普段の業務効率化を達成できた。わからないことはだれかが質問していることが多いから、AIコンテンツラボ内で検索すればわかることが多い。',
-    highlight: '業務効率化を達成できた'
+    name: 'Shinyaさん',
+    content: '今まではロム専だったのに情報発信する意欲がわくようになったし、実際発信できるようになった。どんなことを書いても、Konさんが一言コメントくれること！これ、他のコミュニティには絶対ないです！',
+    highlight: '情報発信する意欲がわくように'
   },
   {
     id: '5',
-    name: 'いいにく',
-    content: '資料作成の質が上がった。AIに関する情報収集の効率化、実用的な知識が身につく。',
-    highlight: 'AIの先生たちの会話を覗ける場所'
+    name: 'かもとりさん',
+    content: 'Claudeを使って普段の業務効率化を達成できた。わからないことはだれかが質問していることが多いから、AIコンテンツラボ内で検索すればわかることが多い。',
+    highlight: '相談できる場所'
   },
   {
     id: '6',
-    name: 'タダオ',
-    content: 'セミナーが出来るようになりました（上手い下手は別として、行動を起こすことができました）。AIのハイレベルな活用法を知る事が出来る。',
-    highlight: '行動を起こすことができた'
+    name: 'いいにくさん',
+    content: '資料作成の質が上がった。AIに関する情報収集の効率化、実用的な知識が身につく。自発的に学ぶ意欲がある人におすすめです。',
+    highlight: 'AIの先生たちの会話を覗ける場所'
   }
 ]
 
@@ -89,16 +89,35 @@ export default function TestimonialsSection() {
         </div>
         
         <div className="text-center mt-12">
+          <div className="bg-gradient-to-r from-orange-50 to-cyan-50 rounded-3xl p-8 mb-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              🎯 期間限定募集のお知らせ
+            </h3>
+            <p className="text-gray-700 mb-6">
+              月額会員の募集は期間限定で行っています！<br />
+              次回の募集開始は、メルマガ登録者に優先的にお知らせします。<br />
+              ぜひメルマガに登録して、参加のチャンスをお見逃しなく✨
+            </p>
+            <a 
+              href="https://nmo1.com/p/r/DfDZJpzk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
+            >
+              📧 メルマガに登録して最新情報を受け取る
+            </a>
+          </div>
+          
           <p className="text-gray-600 mb-6">
-            あなたも「今日の生徒が明日の講師」を体験してみませんか？
+            まずは無料ウェビナーで体験してみませんか？
           </p>
           <a 
-            href="https://nmo1.com/p/r/DfDZJpzk"
+            href="https://nmo-event.peatix.com"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
           >
-            特典動画を受け取って始める
+            🎫 無料ウェビナーに参加する
           </a>
         </div>
       </div>

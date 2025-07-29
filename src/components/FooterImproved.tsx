@@ -38,18 +38,13 @@ export default function FooterImproved() {
             <h4 className="text-lg font-semibold mb-4 text-orange-400">サービス</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/webinar" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://vibecoding-monetize.peatix.com/view" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                   無料ウェビナー
-                </Link>
+                </a>
               </li>
               <li>
                 <Link href="/members" className="text-gray-300 hover:text-white transition-colors">
                   メンバーズ <span className="bg-orange-500 text-white text-xs px-1 py-0.5 rounded-full ml-1">NEW</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/community" className="text-gray-300 hover:text-white transition-colors" prefetch={false}>
-                  実践コミュニティ
                 </Link>
               </li>
               <li>
@@ -65,23 +60,8 @@ export default function FooterImproved() {
             <h4 className="text-lg font-semibold mb-4 text-cyan-400">コンテンツ</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/blog" className="text-gray-300 hover:text-white transition-colors">
-                  ブログ記事
-                </Link>
-              </li>
-              <li>
                 <Link href="/members" className="text-gray-300 hover:text-white transition-colors">
                   成果報告
-                </Link>
-              </li>
-              <li>
-                <Link href="/resources" className="text-gray-300 hover:text-white transition-colors" prefetch={false}>
-                  学習リソース
-                </Link>
-              </li>
-              <li>
-                <Link href="/faq" className="text-gray-300 hover:text-white transition-colors" prefetch={false}>
-                  よくある質問
                 </Link>
               </li>
             </ul>

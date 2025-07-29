@@ -38,14 +38,9 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4 text-orange-600">サービス</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/webinar" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://vibecoding-monetize.peatix.com/view" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                   無料ウェビナー
-                </Link>
-              </li>
-              <li>
-                <Link href="/community" className="text-gray-300 hover:text-white transition-colors" prefetch={false}>
-                  実践コミュニティ
-                </Link>
+                </a>
               </li>
               <li>
                 <Link href="/newsletter" className="text-gray-300 hover:text-white transition-colors">
@@ -65,23 +60,8 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4 text-cyan-600">コンテンツ</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/blog" className="text-gray-300 hover:text-white transition-colors">
-                  ブログ記事
-                </Link>
-              </li>
-              <li>
                 <Link href="/success-stories" className="text-gray-300 hover:text-white transition-colors">
                   成功事例
-                </Link>
-              </li>
-              <li>
-                <Link href="/resources" className="text-gray-300 hover:text-white transition-colors" prefetch={false}>
-                  学習リソース
-                </Link>
-              </li>
-              <li>
-                <Link href="/faq" className="text-gray-300 hover:text-white transition-colors" prefetch={false}>
-                  よくある質問
                 </Link>
               </li>
             </ul>

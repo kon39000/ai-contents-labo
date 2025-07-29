@@ -58,7 +58,7 @@ export default function TweetCard({
               rel="noopener noreferrer"
               className="text-cyan-600 hover:text-cyan-700 text-sm font-medium transition-colors"
             >
-              Xで見る →
+              詳細を見る →
             </Link>
           </div>
         </div>
