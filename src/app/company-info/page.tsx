@@ -32,12 +32,16 @@ export default function CompanyInfoPage() {
                     <h3 className="text-xl font-bold text-gray-900 mb-4">基本情報</h3>
                     <div className="space-y-3">
                       <div>
+                        <span className="font-semibold text-gray-700">会社名：</span>
+                        <span className="text-gray-600">合同会社NFTオーケストラ</span>
+                      </div>
+                      <div>
                         <span className="font-semibold text-gray-700">サービス名：</span>
                         <span className="text-gray-600">AI Contents Labo</span>
                       </div>
                       <div>
                         <span className="font-semibold text-gray-700">代表者：</span>
-                        <span className="text-gray-600">こん</span>
+                        <span className="text-gray-600">勝沼知世（こん）</span>
                       </div>
                       <div>
                         <span className="font-semibold text-gray-700">設立：</span>
@@ -46,6 +50,12 @@ export default function CompanyInfoPage() {
                       <div>
                         <span className="font-semibold text-gray-700">会員数：</span>
                         <span className="text-gray-600">5,700名以上</span>
+                      </div>
+                      <div>
+                        <span className="font-semibold text-gray-700">公式サイト：</span>
+                        <a href="https://www.nft-orchestra.com/" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:text-orange-700 underline">
+                          https://www.nft-orchestra.com/
+                        </a>
                       </div>
                     </div>
                   </div>

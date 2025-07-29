@@ -33,11 +33,11 @@ export default function LegalPage() {
               <div className="space-y-3">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <dt className="font-semibold text-gray-700">事業者名</dt>
-                  <dd className="md:col-span-2 text-gray-600">AI Contents Labo</dd>
+                  <dd className="md:col-span-2 text-gray-600">合同会社NFTオーケストラ</dd>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <dt className="font-semibold text-gray-700">運営責任者</dt>
-                  <dd className="md:col-span-2 text-gray-600">こん</dd>
+                  <dt className="font-semibold text-gray-700">代表者</dt>
+                  <dd className="md:col-span-2 text-gray-600">勝沼知世（こん）</dd>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <dt className="font-semibold text-gray-700">所在地</dt>
@@ -49,7 +49,7 @@ export default function LegalPage() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <dt className="font-semibold text-gray-700">メールアドレス</dt>
-                  <dd className="md:col-span-2 text-gray-600">Discordまたはウェビナーにてお問い合わせください</dd>
+                  <dd className="md:col-span-2 text-gray-600">info@nft-orchestra.com</dd>
                 </div>
               </div>
             </div>

@@ -37,8 +37,8 @@ export default function OperatorPage() {
                   
                   {/* Profile Info */}
                   <div className="text-center md:text-left flex-grow">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">こん</h2>
-                    <p className="text-xl text-orange-600 font-semibold mb-4">AIコンテンツラボ 運営者</p>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">勝沼知世（こん）</h2>
+                    <p className="text-xl text-orange-600 font-semibold mb-4">AIコンテンツラボ 運営者 / 合同会社NFTオーケストラ 代表</p>
                     
                     <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-6">
                       <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-medium">AI活用専門家</span>

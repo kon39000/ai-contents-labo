@@ -29,12 +29,12 @@ export default function HeaderLP() {
             >
               HOME
             </Link>
-            <Link 
-              href="/news" 
+            <a 
+              href="/#latest-news" 
               className="text-gray-600 hover:text-orange-600 text-sm font-medium transition-colors"
             >
               最新情報
-            </Link>
+            </a>
             <Link 
               href="/operator" 
               className="text-gray-600 hover:text-orange-600 text-sm font-medium transition-colors"
@@ -72,12 +72,12 @@ export default function HeaderLP() {
                 >
                   HOME
                 </Link>
-                <Link 
-                  href="/news" 
+                <a 
+                  href="/#latest-news" 
                   className="block px-4 py-2 text-gray-600 hover:text-orange-600 hover:bg-gray-50 text-sm"
                 >
                   最新情報
-                </Link>
+                </a>
                 <Link 
                   href="/operator" 
                   className="block px-4 py-2 text-gray-600 hover:text-orange-600 hover:bg-gray-50 text-sm"
