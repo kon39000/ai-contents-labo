@@ -1,3 +1,7 @@
+'use client'
+
+import React from 'react'
+
 export default function ProblemSection() {
   return (
     <section className="bg-gray-50 py-16 lg:py-24">
@@ -7,7 +11,7 @@ export default function ProblemSection() {
             こんな悩み、ありませんか？
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            AIを学んでも、なかなか収益化に繋げられない方が多いのが現実です
+            AIを学んでも、なかなかスキルアップに繋げられない方が多いのが現実です
           </p>
         </div>
         
@@ -22,11 +26,11 @@ export default function ProblemSection() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  AIを学んでも実際に収益化できない
+                  AIを学んでも実際にスキルアップできない
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  「ChatGPTの使い方は覚えたけど、それをどうやってお金に変えるかわからない」<br>
-                  「学習はしているのに、具体的な成果が出ない」
+                  「ChatGPTの使い方は覚えたけど、それをどうやって実践に活かすかわからない」<br />
+                  「学習はしているのに、具体的なスキル向上を感じられない」
                 </p>
               </div>
             </div>
@@ -45,7 +49,7 @@ export default function ProblemSection() {
                   一人だと続かない、挫折してしまう
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  「最初はやる気があったけど、途中で諦めてしまった」<br>
+                  「最初はやる気があったけど、途中で諦めてしまった」<br />
                   「質問できる人がいなくて、つまずいたまま」
                 </p>
               </div>
@@ -65,7 +69,7 @@ export default function ProblemSection() {
                   何から始めればいいか分からない
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  「AIツールがたくさんあって、どれを使えばいいのかわからない」<br>
+                  「AIツールがたくさんあって、どれを使えばいいのかわからない」<br />
                   「ネットに情報は多いけど、体系的に学べない」
                 </p>
               </div>
@@ -85,7 +89,7 @@ export default function ProblemSection() {
                   忙しくて時間が取れない
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  「仕事や家事で忙しくて、まとまった時間が取れない」<br>
+                  「仕事や家事で忙しくて、まとまった時間が取れない」<br />
                   「子育て中で、集中して学習する時間がない」
                 </p>
               </div>
@@ -100,18 +104,26 @@ export default function ProblemSection() {
               でも、大丈夫です！
             </h3>
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              AIコンテンツラボでは、これらの悩みを全て解決できる環境を用意しています。<br>
-              <span className="font-bold text-orange-600">実践重視のカリキュラム</span>と<span className="font-bold text-cyan-600">仲間との支え合い</span>で、<br>
-              忙しいあなたでも確実に成果を出すことができます。
+              AIコンテンツラボでは、これらの悩みを全て解決できる環境を用意しています。<br />
+              <span className="font-bold text-orange-600">実践重視のカリキュラム</span>と<span className="font-bold text-cyan-600">仲間との支え合い</span>で、<br />
+              忙しいあなたでも確実にスキルアップすることができます。
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="https://nmo1.com/p/r/DfDZJpzk" target="_blank" rel="noopener noreferrer" 
-                 className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200">
+              <a 
+                href="https://nmo1.com/p/r/DfDZJpzk" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
+              >
                 今すぐ解決策を確認する
               </a>
-              <a href="https://nmo-event.peatix.com" target="_blank" rel="noopener noreferrer"
-                 className="border-2 border-cyan-500 text-cyan-600 hover:bg-cyan-500 hover:text-white font-bold py-4 px-8 rounded-full transition-all duration-200">
+              <a 
+                href="https://nmo-event.peatix.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="border-2 border-cyan-500 text-cyan-600 hover:bg-cyan-500 hover:text-white font-bold py-4 px-8 rounded-full transition-all duration-200"
+              >
                 無料ウェビナーで詳しく聞く
               </a>
             </div>
