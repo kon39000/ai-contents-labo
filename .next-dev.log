@@ -1,0 +1,13 @@
+
+> my-v0-project@0.1.0 dev /Users/kon39000/Desktop/VibeCode/1_制作途中/20250630_ACLmain
+> next dev
+
+   ▲ Next.js 16.0.0 (Turbopack)
+   - Local:        http://localhost:3084
+   - Network:      http://192.168.10.117:3084
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1919ms
+ GET / 200 in 1793ms (compile: 1684ms, render: 108ms)
+[?25h
