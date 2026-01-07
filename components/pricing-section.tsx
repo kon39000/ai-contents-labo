@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react"
 
 const benefits = [
   "アーカイブ見放題",
-  "隔週セミナー参加",
+  "会員限定ボイスチャット参加",
   "Udemy特典クーポン",
   "Discord参加自由",
   "登壇チャンス",

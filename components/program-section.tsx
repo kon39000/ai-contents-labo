@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react"
 
 const programs = [
   {
-    title: "隔週セミナー",
-    description: "最新のAI技術やクリエイティブ手法を学べる定期セミナー",
+    title: "会員限定ボイスチャット",
+    description: "最新のAI技術やクリエイティブ手法を学べる定期開催",
     icon: "📚",
   },
   {
