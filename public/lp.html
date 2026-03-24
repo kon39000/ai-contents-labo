@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIコンテンツラボ — 温かみのある研究所</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Noto+Sans+JP:wght@400&family=Zen+Kaku+Gothic+New:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       温かみのある研究所（ナチュラル・誠実）
+       ============================================================ */
+    :root {
+      --bg:      #FDFCFA;       
+      --text:    #2D2D2D;       
+      --primary: #2C4A6E;       
+      --cta:     #4A7C59;       
+      --border:  #E8E4DF;       
+      
+      --shadow:  0 4px 16px rgba(45, 45, 45, 0.03); 
+      --radius:  6px;           
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 400; color: var(--text); background: var(--bg);
+      line-height: 2; font-size: 16px; letter-spacing: 0.03em;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* === Typography === */
+    h1, h2, h3 { font-family: 'Zen Kaku Gothic New', sans-serif; font-weight: 700; color: var(--primary); line-height: 1.5; word-break: keep-all; overflow-wrap: anywhere; }
+    h1 { font-size: clamp(28px, 5.5vw, 42px); margin-bottom: 24px; letter-spacing: 0.05em; }
+    h2 { font-size: clamp(24px, 5vw, 32px); margin-bottom: 32px; text-align: center; }
+    h3 { font-size: 20px; margin-bottom: 12px; }
+    .en-num { font-family: 'Outfit', sans-serif; font-weight: 600; letter-spacing: 0.05em; }
+
+    @media (max-width: 768px) {
+      h1 br { display: none; } /* モバイル時はbrを消して自然な折り返しに任せるか、spanで制御 */
+      .desktop-br { display: none; }
+    }
+
+    .section-label {
+      display: block; text-align: center; font-family: 'Outfit', sans-serif; font-size: 13px; color: var(--primary);
+      opacity: 0.6; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 16px;
+    }
+
+    p { margin-bottom: 24px; color: var(--text); }
+    strong { font-weight: 700; color: var(--text); }
+
+    /* === Button === */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; background: var(--cta); color: #fff !important;
+      font-size: 16px; font-weight: 700; font-family: 'Zen Kaku Gothic New', sans-serif;
+      padding: 20px 48px; border-radius: var(--radius); text-decoration: none; letter-spacing: 0.05em;
+      transition: opacity 0.2s ease; border: none;
+    }
+    .btn:hover { opacity: 0.85; }
+    .btn-wrap { margin-top: 48px; text-align: center; }
+
+    /* === Layout === */
+    .inner { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 120px 0; }
+    @media (max-width: 768px) { .section { padding: 80px 0; } }
+    .section-divider { border-top: 1px solid var(--border); }
+
+    /* === HERO === */
+    #hero { padding: 80px 0 64px; text-align: center; }
+    .hero-grid { display: flex; flex-direction: column; gap: 48px; align-items: center; }
+    @media (max-width: 768px) {
+      #hero { padding: 48px 0; }
+      .hero-grid { gap: 40px; }
+    }
+    
+    .hero-eyebrow { font-weight: 700; font-size: 14px; color: var(--primary); display: block; margin-bottom: 24px; opacity: 0.7; letter-spacing: 0.15em; }
+    .hero-lead { font-size: 18px; line-height: 2.2; margin-bottom: 32px; }
+    @media (max-width: 768px) { .hero-lead { font-size: 16px; line-height: 2; margin-bottom: 24px; } }
+    
+    .hero-price { margin-bottom: 40px; font-size: 15px; color: var(--primary); }
+    .hero-price .en-num { font-size: 32px; margin: 0 8px; }
+
+    .hero-photo { width: 100%; }
+    .hero-photo img { width: 100%; height: auto; border-radius: var(--radius); object-fit: cover; aspect-ratio: 16 / 9; box-shadow: var(--shadow); }
+    @media (max-width: 768px) { .hero-photo img { aspect-ratio: 4 / 3; } }
+
+    /* === Stats === */
+    .stat-row { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; margin-top: 48px; }
+    .stat-item { text-align: center; }
+    .stat-item .stat-num { font-size: 40px; color: var(--primary); line-height: 1.2; margin-bottom: 4px; }
+    .stat-item .stat-label { font-size: 14px; color: var(--text); opacity: 0.8; }
+    @media (max-width: 768px) { .stat-row { gap: 32px; } }
+
+    /* === Problem === */
+    .pain-card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; align-items: stretch; }
+    @media (max-width: 768px) { .pain-card-grid { grid-template-columns: 1fr; gap: 24px; } }
+    .pain-card { background: #fff; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; }
+    .pain-card img { width: 100%; height: 200px; object-fit: cover; display: block; }
+    .pain-card-body { padding: 24px; flex-grow: 1; display:flex; flex-direction: column;}
+    .pain-card-body h3 { font-size: 18px; margin-bottom: 12px; }
+    .pain-card-body p { font-size: 14px; margin-bottom: 0; line-height: 1.7; flex-grow: 1; }
+
+    .pain-resolve { margin-top: 64px; text-align: center; padding: 0 24px; font-family: 'Zen Kaku Gothic New', sans-serif; font-size: 20px; line-height: 2; color: var(--primary); }
+    @media (max-width: 768px) { .pain-resolve { font-size: 18px; margin-top: 48px; padding: 0; } }
+
+    /* === Features === */
+    .feature-card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px; }
+    @media (max-width: 768px) { .feature-card-grid { grid-template-columns: 1fr; gap: 24px; } }
+    .feature-box { background: var(--bg); border: 1px solid var(--border); padding: 40px 24px; border-radius: var(--radius); text-align: center; box-shadow: var(--shadow); }
+    .feature-box .feature-icon { font-size: 40px; margin-bottom: 20px; }
+    .feature-box h3 { font-size: 18px; margin-bottom: 16px; line-height: 1.5; }
+    .feature-box p { font-size: 14px; margin-bottom: 0; color: var(--text); opacity: 0.8; line-height: 1.7;}
+
+    /* === Grid Cards (For Whom) === */
+    .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 56px; }
+    @media (max-width: 600px) { .card-grid { grid-template-columns: 1fr; gap: 24px; margin-top: 40px; } }
+    .minimal-card { background: #fff; border: 1px solid var(--border); padding: 40px 32px; border-radius: var(--radius); box-shadow: var(--shadow); }
+    @media (max-width: 600px) { .minimal-card { padding: 32px 24px; } }
+    .minimal-card h3 { font-size: 18px; margin-bottom: 16px; }
+    
+    .check-list { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+    .check-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; }
+    .check-list .mark { font-family: 'Zen Kaku Gothic New', sans-serif; font-weight: 700; color: var(--primary); flex-shrink: 0; }
+    .check-list.negative .mark { color: rgba(45, 45, 45, 0.4); }
+
+    /* === About === */
+    .profile-wrap { display: flex; gap: 48px; align-items: center; margin-top: 56px; }
+    @media (max-width: 600px) { .profile-wrap { flex-direction: column; text-align: center; gap: 32px; } }
+    .profile-avatar { width: 140px; height: 140px; border-radius: 50%; background: #F0EBE1; flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: rgba(44, 74, 110, 0.4); font-size: 13px; border: 1px dashed var(--border); }
+    .profile-body h3 { font-size: 24px; margin-bottom: 8px; }
+    .profile-role { font-size: 14px; opacity: 0.7; margin-bottom: 20px; display: block; }
+    
+    .quote-box { border-left: 2px solid var(--border); padding-left: 24px; margin-top: 32px; font-family: 'Zen Kaku Gothic New', sans-serif; font-size: 16px; color: var(--primary); }
+    @media (max-width: 600px) { .quote-box { border-left: none; border-top: 2px solid var(--border); padding-left: 0; padding-top: 24px; text-align: left; } }
+
+    /* === Pricing === */
+    .pricing-box { max-width: 500px; margin: 48px auto 0; background: #fff; border: 1px solid var(--border); padding: 56px 40px; border-radius: var(--radius); box-shadow: var(--shadow); text-align: center; }
+    @media (max-width: 600px) { .pricing-box { padding: 40px 24px; } }
+    .pricing-box .price { color: var(--primary); margin-bottom: 32px; }
+    .pricing-box .en-num { font-size: 48px; margin: 0 8px; }
+    .pricing-includes { text-align: left; list-style: none; margin-bottom: 40px; padding-top: 32px; border-top: 1px solid var(--border); }
+    .pricing-includes li { padding: 12px 0; font-size: 15px; display: flex; gap: 12px; }
+    .pricing-includes li::before { content: 'ー'; color: var(--border); flex-shrink: 0; }
+
+    /* === Campaign Bonuses === */
+    .bonus-area { margin-top: 80px; padding: 64px 32px; background: rgba(74, 124, 89, 0.05); border-radius: var(--radius); text-align: center; border: 1px solid rgba(74, 124, 89, 0.15); }
+    @media (max-width: 600px) { .bonus-area { padding: 48px 16px; margin-top: 56px; } }
+    .bonus-list { display: flex; flex-direction: column; gap: 40px; margin-top: 48px; }
+    .bonus-card { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--border); overflow: hidden; transition: opacity 0.2s ease; display: flex; flex-direction: column;}
+    .bonus-card img { width: 100%; height: auto; display: block; border-bottom: 1px solid var(--border); }
+    .bonus-card:hover { opacity: 0.95; box-shadow: 0 12px 32px rgba(45,45,45,0.06); }
+    .bonus-body { padding: 32px; text-align: left; }
+    @media (max-width: 600px) { .bonus-body { padding: 24px; } }
+
+    /* === Footer === */
+    footer { padding: 80px 24px; background: #fff; border-top: 1px solid var(--border); text-align: center; font-size: 14px; color: var(--text); opacity: 0.6; }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="inner">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-eyebrow">AIコンテンツラボ</span>
+          <!-- インラインブロックを使って単語の途中での不自然な改行を防ぐ -->
+          <h1><span style="display:inline-block;">インプットだけで、</span><br class="desktop-br"><span style="display:inline-block;">終わっていませんか？</span></h1>
+          <p class="hero-lead">
+            <span style="display:inline-block;">講座を受けた。</span><span style="display:inline-block;">本を読んだ。</span><span style="display:inline-block;">AIも触ってみた。</span><br>
+            それでもまだ「使えている」実感がない方へ。<br><br>
+            知識が足りないんじゃない。<br>
+            試せる環境と、一緒に動く仲間がなかっただけです。
+          </p>
+          <div class="hero-price">
+            月額 <span class="en-num">¥2,980</span> （税込）
+          </div>
+          <a href="https://nmo1.com/p/r/jLJHIDSC" class="btn">AIコンテンツラボに参加する</a>
+          
+          <div class="stat-row">
+            <div class="stat-item">
+              <div class="en-num stat-num">560+</div>
+              <div class="stat-label">累計会員数</div>
+            </div>
+            <div class="stat-item">
+              <div class="en-num stat-num">Weekly</div>
+              <div class="stat-label">無料ウェビナー開催</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-photo">
+          <img src="images/hero.png" alt="Workspace">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="section section-divider">
+    <div class="inner">
+      <span class="section-label">Problem</span>
+      <h2>こんなお悩みありませんか？</h2>
+      <p style="text-align: center;">AIツールは触っている。ウェビナーも見ている。<br>でも「学んだこと」が実際の仕事や発信に繋がっていない。</p>
+      
+      <div class="pain-card-grid">
+        <div class="pain-card">
+          <img src="images/pain1.png" alt="インプットで終わってしまう">
+          <div class="pain-card-body">
+            <h3>インプットで<br>終わってしまう</h3>
+            <p>教材を買う・講座を受ける・ウェビナーを見る。知識は増えているはずなのに現実が変わらない。</p>
+          </div>
+        </div>
+        <div class="pain-card">
+          <img src="images/pain2.png" alt="追いかけるのに疲れた">
+          <div class="pain-card-body">
+            <h3>追いかけるのに<br>疲れた</h3>
+            <p>次々と出るAIツール。全部追わなきゃと焦るが、何が自分に必要なのかがわからない。</p>
+          </div>
+        </div>
+        <div class="pain-card">
+          <img src="images/pain3.png" alt="AIに聞いてもわからない">
+          <div class="pain-card-body">
+            <h3>AIに聞いても<br>わからない</h3>
+            <p>プロンプトを試してもうまくいかない。自分の仕事にどう落とし込めばいいか相談できる相手がいない。</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pain-resolve">
+        得た知識は、使わなければ意味がない。<br>
+        「知っている」から「できる」へ。<br>
+        その一歩を踏み出せる環境が、ここにあります。
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Features (New) -->
+  <section class="section section-divider" style="background: #fff;">
+    <div class="inner">
+      <span class="section-label">Features</span>
+      <h2>AIコンテンツラボでできること</h2>
+      
+      <div class="feature-card-grid">
+        <div class="feature-box">
+          <div class="feature-icon">📹</div>
+          <h3>これまでのアーカイブ<br>150本以上が見放題</h3>
+          <p>過去に行われた有料級のウェビナーや勉強会動画を、入会後すぐにすべて無料で視聴いただけます。</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon">💬</div>
+          <h3>チャットでいつでも<br>何度でも相談可能</h3>
+          <p>AIの使い方から実践的な活用法まで、専用チャットグループでいつでも気軽に専門家へ質問・相談が可能です。</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon">🎓</div>
+          <h3>月1回の開催！<br>会員限定セミナー</h3>
+          <p>毎月、今の時代に合った最新のAIトピックや実践的なワークショップを行うクローズドセミナーに参加できます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Provided Focus -->
+  <section class="section section-divider">
+    <div class="inner">
+      <span class="section-label">For Whom</span>
+      <h2>こんな人のための研究所です</h2>
+      
+      <div class="card-grid">
+        <div class="minimal-card">
+          <h3>向いている方</h3>
+          <ul class="check-list">
+            <li><span class="mark">✓</span> 講座・教材でインプットしてきたが、次のステップが見えない</li>
+            <li><span class="mark">✓</span> AIを使っているが「何のために使うか」がぼんやりしている</li>
+            <li><span class="mark">✓</span> 一人で考えると止まる。同じフェーズの仲間と動きたい</li>
+          </ul>
+        </div>
+        <div class="minimal-card" style="background: var(--bg); border-color: rgba(232, 228, 223, 0.5); box-shadow: none;">
+          <h3 style="color: rgba(45,45,45,0.7);">向いていないかもしれない方</h3>
+          <ul class="check-list negative">
+            <li><span class="mark">△</span> 誰かが正解を教えてくれるのを待っている方</li>
+            <li><span class="mark">△</span> 受け身でいたい方（自分で動く人のための場所です）</li>
+            <li><span class="mark">△</span> 即座に売上直結の構築をしたい方</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section section-divider">
+    <div class="inner">
+      <span class="section-label">About</span>
+      <h2>主宰：こんとも</h2>
+      
+      <div class="profile-wrap">
+        <img src="images/kontomo-profile.png" alt="こんとも" class="profile-avatar" style="object-fit: cover; border: none; background: transparent;">
+        <div class="profile-body">
+          <h3>こんとも</h3>
+          <span class="profile-role">AIコンテンツラボ主宰</span>
+          <p>在宅で働きながら2人の子どもを育てるフリーランス。コロナでクライアントワークが限界になり、NFTでの経験を経て、「持続可能な個人ビジネス」の研究に行き着く。</p>
+          <div class="quote-box">
+            「得た知識は、使わなければ意味がない。<br>わたし自身がずっとそう思いながら動いてきました。だからこそ、試せる場所を作りたかったのです。」
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & CTA -->
+  <section class="section section-divider" id="join">
+    <div class="inner">
+      <span class="section-label">Pricing</span>
+      <h2>シンプルな料金体系</h2>
+      <p style="text-align: center;">入会・退会はいつでも自由です。縛りはありません。</p>
+
+      <div class="pricing-box">
+        <div class="price">月額 <span class="en-num">¥2,980</span> （税込）</div>
+        
+        <ul class="pricing-includes">
+          <li>毎週ウェビナー アーカイブ見放題</li>
+          <li>月1回 会員限定セミナー</li>
+          <li>チャットで質問し放題</li>
+        </ul>
+        
+        <a href="https://nmo1.com/p/r/jLJHIDSC" class="btn" style="width: 100%;">AIコンテンツラボに参加する</a>
+        <p style="margin-top:24px; font-size: 13px; margin-bottom:0; opacity:0.8;">いつでも退会可能</p>
+      </div>
+
+      <!-- Campaign Bonuses -->
+      <div class="bonus-area">
+        <span class="section-label" style="color: var(--cta); opacity: 1;">3/24 - 3/27 Limited Offer</span>
+        <h2 style="color: var(--cta); margin-bottom: 24px;">3/27（金）23:59までの<br>特別なご案内</h2>
+        <p>新年度スタートキャンペーンとして、期間内のご入会で<br><strong>3つの豪華特典</strong>をプレゼントいたします。</p>
+        
+        <div class="bonus-list">
+          
+          <div class="bonus-card">
+            <img src="images/tokuten_Cowork_Udemy.jpg" alt="Udemyコース特典">
+            <div class="bonus-body">
+              <span style="background: var(--cta); color: #fff; padding: 4px 12px; font-size: 12px; font-weight: bold; border-radius: 4px; display: inline-block; margin-bottom: 12px;">特典 1</span>
+              <h3 style="font-size: 20px; line-height: 1.5; margin-bottom: 12px; color: var(--primary);">動画講座「Claude Cowork完全実践講座」<br>無料受講クーポン <span style="font-size: 14px; color: #e53e3e; font-weight:bold;">(先着100名)</span></h3>
+              <p style="font-size: 15px; margin-bottom: 0;">AIエージェントチームを自分の手で作って動かすための実践的なロードマップを学べる特別講座を、無料で受講できるクーポンです。</p>
+            </div>
+          </div>
+          
+          <div class="bonus-card">
+            <img src="images/tokuten_Zoom.png" alt="Zoom面談特典">
+            <div class="bonus-body">
+              <span style="background: var(--cta); color: #fff; padding: 4px 12px; font-size: 12px; font-weight: bold; border-radius: 4px; display: inline-block; margin-bottom: 12px;">特典 2</span>
+              <h3 style="font-size: 20px; line-height: 1.5; margin-bottom: 12px; color: var(--primary);">こんともとの個別Zoom面談 (30分)</h3>
+              <p style="font-size: 15px; margin-bottom: 0;">既存メンバー様からも大人気だった1対1の特別面談を希望者限定で開催！30分間じっくりお話しし、あなたが次の一歩を踏み出せるよう直接サポートいたします。</p>
+            </div>
+          </div>
+          
+          <div class="bonus-card">
+            <img src="images/tokuten_AIkon.png" alt="AI特典">
+            <div class="bonus-body">
+              <span style="background: var(--cta); color: #fff; padding: 4px 12px; font-size: 12px; font-weight: bold; border-radius: 4px; display: inline-block; margin-bottom: 12px;">特典 3</span>
+              <h3 style="font-size: 20px; line-height: 1.5; margin-bottom: 12px; color: var(--primary);">24時間いつでもサポート「AIロボこん」</h3>
+              <p style="font-size: 15px; margin-bottom: 0;">会員限定で使用できるオリジナルAI（Notebook LM版）！こんとものこれまでの全知見や過去の経験が学習されており、あなたのお悩みや質問に24時間体制でお答えします。</p>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="btn-wrap" style="margin-top: 48px;">
+          <a href="https://nmo1.com/p/r/jLJHIDSC" class="btn" style="width: 100%; max-width: 400px; padding: 24px; white-space: normal;">今すぐ参加して特典を受け取る</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="en-num">© 2026 AIコンテンツラボ</p>
+  </footer>
+</body>
+</html>
